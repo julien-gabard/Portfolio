@@ -1,0 +1,24 @@
+@import'src/styles/_vars';
+
+.board {
+  background-color: rgb(37, 241, 224);
+  text-align: center;
+  font-size: 28px;
+  margin-top: 5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  .board__ul {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .board__li {
+      letter-spacing: 2px;
+      padding: 1rem;
+      border-bottom: 2px solid black;
+    }
+  }
+}
