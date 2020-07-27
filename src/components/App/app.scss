@@ -1,1 +1,23 @@
 @import'src/styles/_vars';
+
+.app {
+
+  .app__menu {
+    display: flex;
+    justify-content: space-between;
+
+    .app__button {
+      background: none;
+      border: none;
+
+      .app__button__menu {
+        color: $second-color;
+
+        &:hover {
+          color: $alter-color;
+        }
+      }
+    }
+  }
+
+}
