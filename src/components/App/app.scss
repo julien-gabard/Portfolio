@@ -56,5 +56,12 @@
       width: 300px;
       height: auto;
     }
+
+    .app__logo-name {
+      color: $second-color;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 36px;
+    }
   }
 }

@@ -34,6 +34,7 @@ const App = ({ displayBoard, onHandleClick }) => {
       </div>
       <div className="app__logo">
         <img src={planetLogo} alt="logo-planet" className="app__logo-image" />
+        <h1 className="app__logo-name">Julien Gabard</h1>
       </div>
       <Board />
     </div>
