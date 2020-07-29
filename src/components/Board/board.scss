@@ -19,12 +19,11 @@
 
     .board__li {
       letter-spacing: 2px;
-      margin: 4rem 0;
+      margin: 6rem 0;
       
       .board__li-lien {
         text-transform: uppercase;
-        // border: 1px solid $primary-color;
-        // border-radius: 5px;
+        font-weight: bold;
         padding: 1rem;
       }
     }
