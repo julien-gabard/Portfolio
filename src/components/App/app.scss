@@ -1,50 +1,40 @@
 @import'src/styles/_vars';
 
 .app {
-  position: relative;
 
   .app__menu {
     background-color: rgba($option-color, 0.9);
-    height: 8.6vh;
 
     .app__button {
       background: none;
       border: none;
-      position: absolute;
-      animation-name: offDisplay;
-      animation-duration: 400ms;
 
-      .app__button__menu {
-        color: $second-color;
+      .nav-icon {
+        margin: 1em;
+        width: 40px;
 
-        &:hover {
-          color: $alter-color;
-        }
-      }
-
-      &.open {
-        animation-name: onDisplay;
-        animation-duration: 400ms;
-        animation-fill-mode: forwards;
-  
-        @keyframes onDisplay {
-          0% {
-            right: 82%;
-          }
-  
-          100% {
-            right: 0;
-          }
-        }
-      }
-
-      @keyframes offDisplay {
-        0% {
-          right: 0;
+        &.nav-icon:after,
+        &.nav-icon:before,
+        &.nav-icon div {
+          content: '';
+          background-color: #fff;
+          border-radius: 3px;
+          display: block;
+          height: 5px;
+          margin: 7px 0;
+          transition: all .2s ease-in-out;
         }
 
-        100% {
-          right: 82%;
+        &.open:before {
+          transform: translateY(12px) rotate(135deg);
+        }
+        
+        &.open:after {
+          transform: translateY(-12px) rotate(-135deg);
+        }
+        
+        &.open div {
+          transform: scale(0);
         }
       }
     }
