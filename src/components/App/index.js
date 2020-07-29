@@ -5,9 +5,6 @@ import PropTypes from 'prop-types';
 // == Import components
 import Board from 'src/containers/Board';
 
-// == Import react-feather
-// import { Menu } from 'react-feather';
-
 // == Import scss
 import './app.scss';
 
