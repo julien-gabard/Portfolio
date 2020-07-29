@@ -3,7 +3,7 @@
 .board {
   position: absolute;
   z-index: 2;
-  background-color: rgba($second-color, 0.9);
+  background-color: rgba($second-color, 0.95);
   text-align: center;
   font-size: 20px;
   height: 100vh;
@@ -23,8 +23,8 @@
       
       .board__li-lien {
         text-transform: uppercase;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
+        // border: 1px solid $primary-color;
+        // border-radius: 5px;
         padding: 1rem;
       }
     }
