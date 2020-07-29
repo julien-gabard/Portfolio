@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Board from 'src/containers/Board';
 
 // == Import react-feather
-import { Menu, Plus } from 'react-feather';
+import { Menu } from 'react-feather';
 
 // == Import scss
 import './app.scss';
@@ -17,14 +17,17 @@ const App = ({ displayBoard, onHandleClick }) => {
     onHandleClick();
   };
 
+  let buttonClassname = 'app__button';
+
+  if (displayBoard === true) {
+    buttonClassname = 'app__button open';
+  }
+
   return (
     <div className="app">
       <div className="app__menu">
-        <button type="button" className="app__button" onClick={handleClick}>
+        <button type="button" className={buttonClassname} onClick={handleClick}>
           <Menu className="app__button__menu" size="50" />
-        </button>
-        <button type="button" className="app__button">
-          <Plus className="app__button__menu" size="50" />
         </button>
       </div>
       {displayBoard && <Board />}

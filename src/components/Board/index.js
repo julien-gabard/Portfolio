@@ -38,7 +38,7 @@ const Board = ({ displayBoard }) => {
 
 // == PropTypes
 Board.propTypes = {
-  displayBoard: PropTypes.bool, // <- Il devrais être un .bool ?
+  displayBoard: PropTypes.bool,
 };
 
 // == PropTypes default

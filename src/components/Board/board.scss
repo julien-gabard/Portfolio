@@ -1,7 +1,7 @@
 @import'src/styles/_vars';
 
 .board {
-  background-color: $second-color;
+  background-color: rgba($second-color, 0.8);
   text-align: center;
   font-size: 20px;
   position: absolute;

@@ -1,14 +1,18 @@
 @import'src/styles/_vars';
 
 .app {
+  position: relative;
 
   .app__menu {
-    display: flex;
-    justify-content: space-between;
+    background-color: rgba($option-color, 0.9);
+    height: 8.6vh;
 
     .app__button {
       background: none;
       border: none;
+      position: absolute;
+      animation-name: offDisplay;
+      animation-duration: 400ms;
 
       .app__button__menu {
         color: $second-color;
@@ -17,7 +21,32 @@
           color: $alter-color;
         }
       }
+
+      &.open {
+        animation-name: onDisplay;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+  
+        @keyframes onDisplay {
+          0% {
+            right: 82%;
+          }
+  
+          100% {
+            right: 0;
+          }
+        }
+      }
+
+      @keyframes offDisplay {
+        0% {
+          right: 0;
+        }
+
+        100% {
+          right: 82%;
+        }
+      }
     }
   }
-
 }
