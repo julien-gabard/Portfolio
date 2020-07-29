@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   animation-name: offDisplayBoard;
-  animation-duration: 300ms;
+  animation-duration: 600ms;
   animation-fill-mode: forwards;
   overflow: hidden;
   
@@ -19,19 +19,49 @@
 
     .board__li {
       letter-spacing: 2px;
-      margin: 6rem 0;
+      margin: 5rem 0;
+      animation-name: offDisplayLink;
+      animation-duration: 150ms;
+      animation-fill-mode: forwards;
       
-      .board__li-lien {
+      .board__li-link {
         text-transform: uppercase;
         font-weight: bold;
         padding: 1rem;
       }
+
+      &.li-open {
+        animation-name: onDisplayLink;
+        animation-duration: 1.2s;
+        animation-fill-mode: forwards;
+
+        @keyframes onDisplayLink {
+          0% {
+            margin-left: -35em;
+          }
+  
+          100% {
+            margin-left: 0;
+          }
+        }
+      }
+
+      @keyframes offDisplayLink {
+        0% {
+          margin-left: 0;
+        }
+
+        100% {
+          margin-left: -35em;
+        }
+      }
     }
   }
 
-  &.board__open {
+  &.board-open {
     animation-name: onDisplayBoard;
-    animation-duration: 300ms;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
 
     @keyframes onDisplayBoard {
       0% {

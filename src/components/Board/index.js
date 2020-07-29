@@ -8,28 +8,30 @@ import './board.scss';
 // == Component
 const Board = ({ displayBoard }) => {
   let boardClassname = 'board';
+  let linkClassname = 'board__li';
 
   if (displayBoard === true) {
-    boardClassname = 'board board__open';
+    boardClassname = 'board board-open';
+    linkClassname = 'board__li li-open';
   }
 
   return (
     <div className={boardClassname}>
       <ul className="board__ul">
-        <li className="board__li">
-          <a href="#" className="board__li-lien">A propos</a>
+        <li className={linkClassname}>
+          <a href="#" className="board__li-link">A propos</a>
         </li>
-        <li className="board__li">
-          <a href="#" className="board__li-lien">Compétences</a>
+        <li className={linkClassname}>
+          <a href="#" className="board__li-link">Compétences</a>
         </li>
-        <li className="board__li">
-          <a href="#" className="board__li-lien">Formation</a>
+        <li className={linkClassname}>
+          <a href="#" className="board__li-link">Formation</a>
         </li>
-        <li className="board__li">
-          <a href="#" className="board__li-lien">Projets</a>
+        <li className={linkClassname}>
+          <a href="#" className="board__li-link">Projets</a>
         </li>
-        <li className="board__li">
-          <a href="#" className="board__li-lien">Contact</a>
+        <li className={linkClassname}>
+          <a href="#" className="board__li-link">Contact</a>
         </li>
       </ul>
     </div>
