@@ -32,7 +32,7 @@ const App = ({ displayBoard, onHandleClick }) => {
           </div>
         </button>
       </div>
-      {displayBoard && <Board />}
+      <Board />
     </div>
   );
 };

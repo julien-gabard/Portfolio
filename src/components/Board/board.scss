@@ -1,22 +1,25 @@
 @import'src/styles/_vars';
 
 .board {
+  position: absolute;
+  z-index: 0;
   background-color: rgba($second-color, 0.8);
   text-align: center;
   font-size: 20px;
-  position: absolute;
   width: 100%;
-  height: 91.4vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  animation-name: offDisplay;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
   
   .board__ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 
     .board__li {
       letter-spacing: 2px;
+      margin: 3.5rem 0;
       
       .board__li-lien {
         text-transform: uppercase;
@@ -33,11 +36,22 @@
 
     @keyframes onDisplayBoard {
       0% {
-        left: -50em;
+        width: 0%;
       }
+
       100% {
-        left: 0;
+        width: 100%;
       }
+    }
+  }
+
+  @keyframes offDisplay {
+    0% {
+      width: 100%;
+    }
+
+    100% {
+      width: 0%;
     }
   }
 }

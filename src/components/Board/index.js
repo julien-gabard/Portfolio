@@ -7,7 +7,7 @@ import './board.scss';
 
 // == Component
 const Board = ({ displayBoard }) => {
-  let boardClassname;
+  let boardClassname = 'board';
 
   if (displayBoard === true) {
     boardClassname = 'board board__open';
