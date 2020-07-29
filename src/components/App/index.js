@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import components
-import Board from 'src/components/Board';
+import Board from 'src/containers/Board';
 
 // == Import react-feather
 import { Menu, Plus } from 'react-feather';

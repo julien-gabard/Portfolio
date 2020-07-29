@@ -2,10 +2,9 @@
 import { connect } from 'react-redux';
 
 // == Import actions
-import { menuButtonAction } from 'src/actions/actionApp';
 
 // == Import component
-import App from 'src/components/App';
+import Board from 'src/components/Board';
 
 // == Fonction props
 const mapStateToProps = (state) => ({
@@ -13,15 +12,12 @@ const mapStateToProps = (state) => ({
   displayBoard: state.app.displayBoard,
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (/* dispatch */) => ({
   // nom de la prop à remplir: callback qui contient un appel à dispatch
-  onHandleClick: () => {
-    dispatch(menuButtonAction());
-  },
 });
 
 // == Export
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(App);
+)(Board);

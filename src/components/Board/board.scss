@@ -4,6 +4,8 @@
   background-color: $second-color;
   text-align: center;
   font-size: 20px;
+  position: absolute;
+  width: 100%;
   height: 91.4vh;
   display: flex;
   justify-content: center;
@@ -19,7 +21,22 @@
       .board__li-lien {
         text-transform: uppercase;
         border: 1px solid $primary-color;
+        border-radius: 5px;
         padding: 1rem;
+      }
+    }
+  }
+
+  &.board__open {
+    animation-name: onDisplayBoard;
+    animation-duration: 300ms;
+
+    @keyframes onDisplayBoard {
+      0% {
+        left: -50em;
+      }
+      100% {
+        left: 0;
       }
     }
   }
