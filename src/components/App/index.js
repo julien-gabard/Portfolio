@@ -8,6 +8,9 @@ import Board from 'src/containers/Board';
 // == Import scss
 import './app.scss';
 
+// == Import images
+import planetLogo from 'src/assets/images/planet.png';
+
 // == Composant
 const App = ({ displayBoard, onHandleClick }) => {
   const handleClick = () => {
@@ -28,6 +31,9 @@ const App = ({ displayBoard, onHandleClick }) => {
             <div />
           </div>
         </button>
+      </div>
+      <div className="app__logo">
+        <img src={planetLogo} alt="logo-planet" className="app__logo-image" />
       </div>
       <Board />
     </div>
