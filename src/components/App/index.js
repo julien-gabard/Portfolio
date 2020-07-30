@@ -3,7 +3,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import components
+// == Containers
 import Board from 'src/containers/Board';
+// == Components
+import Background from 'src/components/Background';
 
 // == Import scss
 import './app.scss';
@@ -25,6 +28,7 @@ const App = ({ displayBoard, onHandleClick }) => {
 
   return (
     <div className="app">
+      <Background />
       <div className="app__menu">
         <button type="button" className="app__button" onClick={handleClick}>
           <div className={buttonClassname}>
