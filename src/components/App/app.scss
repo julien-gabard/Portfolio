@@ -5,7 +5,7 @@
   z-index: auto;
 
   .app__menu {
-    background-color: rgba($option-color, 0.3);
+    background-color: rgba($grey-color, 0.3);
     position: absolute;
     width: 100%;
     top: 0;
@@ -23,7 +23,7 @@
         &.nav-icon:before,
         &.nav-icon div {
           content: '';
-          background-color: $second-color;
+          background-color: $green-color;
           border-radius: 3px;
           display: block;
           height: 5px;
@@ -33,12 +33,12 @@
 
         &.open:before {
           transform: translateY(12px) rotate(135deg);
-          background-color: $close-color;
+          background-color: $red-color;
         }
         
         &.open:after {
           transform: translateY(-12px) rotate(-135deg);
-          background-color: $close-color;
+          background-color: $red-color;
         }
         
         &.open div {
