@@ -7,7 +7,6 @@
   .app__menu {
     background-color: rgba($option-color, 0.3);
     position: absolute;
-    top: 0;
     width: 100%;
     z-index: 4;
 
@@ -45,30 +44,6 @@
           transform: scale(0);
         }
       }
-    }
-  }
-
-  .app__logo {
-    position: absolute;
-    height: 100vh;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .app__logo-image {
-      width: 300px;
-      height: auto;
-    }
-
-    .app__logo-name {
-      color: $second-color;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 36px;
-      text-shadow: 0px 0px 7px rgba($alter-color, 0.75);
     }
   }
 }

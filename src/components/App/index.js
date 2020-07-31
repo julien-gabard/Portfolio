@@ -7,12 +7,10 @@ import PropTypes from 'prop-types';
 import Board from 'src/containers/Board';
 // == Components
 import Background from 'src/components/Background';
+import Home from 'src/components/Home';
 
 // == Import scss
 import './app.scss';
-
-// == Import images
-import planetLogo from 'src/assets/images/planet.png';
 
 // == Composant
 const App = ({ displayBoard, onHandleClick }) => {
@@ -36,10 +34,7 @@ const App = ({ displayBoard, onHandleClick }) => {
           </div>
         </button>
       </div>
-      <div className="app__logo">
-        <img src={planetLogo} alt="logo-planet" className="app__logo-image" />
-        <h1 className="app__logo-name">Julien Gabard</h1>
-      </div>
+      <Home />
       <Board />
     </div>
   );
