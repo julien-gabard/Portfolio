@@ -1,25 +1,35 @@
 @import 'src/styles/_vars';
 
-.home__logo {
-  position: absolute;
+@font-face {
+  font-family: 'RockSalt';
+  src: url('../../assets/fonts/RockSalt-Regular.ttf');
+}
+
+.home {
   height: 100vh;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
 
-  .home__logo-image {
+  .home__logo {
     width: 300px;
     height: auto;
   }
 
-  .home__logo-name {
+  .home__name {
+    color: $alter-color;
+    font-family: 'RockSalt', sans-serif;
+    margin-top: 3rem;
+    font-size: 38px;
+    letter-spacing: 2px;
+  }
+
+  .home__content {
     color: $second-color;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 4rem;
-    font-size: 36px;
-    text-shadow: 0px 0px 7px rgba($alter-color, 0.75);
+    margin-top: 2rem;
+    font-size: 28px;
+    font-family: sans-serif;
   }
 }
