@@ -6,11 +6,11 @@ import './background.scss';
 
 // == Component
 const Background = () => (
-  <>
+  <div className="background">
     <div id="stars" />
     <div id="stars2" />
     <div id="stars3" />
-  </>
+  </div>
 );
 
 // == Export

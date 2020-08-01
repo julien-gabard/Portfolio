@@ -8,6 +8,7 @@ import Board from 'src/containers/Board';
 // == Components
 import Background from 'src/components/Background';
 import Home from 'src/components/Home';
+import About from 'src/components/About';
 
 // == Import scss
 import './app.scss';
@@ -34,8 +35,9 @@ const App = ({ displayBoard, onHandleClick }) => {
           </div>
         </button>
       </div>
-      <Home />
       <Board />
+      <Home />
+      <About />
     </div>
   );
 };
