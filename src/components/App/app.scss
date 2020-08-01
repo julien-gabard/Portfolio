@@ -1,15 +1,13 @@
 @import'src/styles/_vars';
 
 .app {
-  position: relative;
-  z-index: auto;
 
   .app__menu {
-    background-color: rgba($grey-color, 0.3);
+    background-color: rgba($grey-color, 0.7);
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 4;
+    z-index: 8;
 
     .app__button {
       background: none;
@@ -33,12 +31,12 @@
 
         &.open:before {
           transform: translateY(12px) rotate(135deg);
-          background-color: $red-color;
+          background-color: $bleu-color;
         }
         
         &.open:after {
           transform: translateY(-12px) rotate(-135deg);
-          background-color: $red-color;
+          background-color: $bleu-color;
         }
         
         &.open div {

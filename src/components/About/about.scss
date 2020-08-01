@@ -1,5 +1,18 @@
 @import 'src/styles/_vars';
 
 .about {
-  color: $green-color;
+  position: absolute;
+  z-index: 4;
+
+  .about__title {
+    color: $bleu-color;
+  }
+
+  .about__content {
+    color: $green-color;
+
+    .about__content-link {
+      color: $bleu-color;
+    }
+  }
 }
