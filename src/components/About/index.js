@@ -7,7 +7,10 @@ import './about.scss';
 // == Component
 const About = () => (
   <div className="about">
-    <h2 className="about__title">A propos</h2>
+    <div className="about__title">
+      <h2 className="about__title-content">A propos</h2>
+      <div className="about__title-line" />
+    </div>
     <p className="about__content">
       Bonjour moi c'est Julien, développeur web curieux, rigoureux et autonome.
     </p>

@@ -1,18 +1,36 @@
 @import 'src/styles/_vars';
 
 .about {
-  position: absolute;
-  z-index: 4;
+  padding: 1rem;
 
   .about__title {
     color: $bleu-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    .about__title-content {
+      font-size: 28px;
+      display: inline-block;
+    }
+
+    .about__title-line {
+      height: 1px;
+      width: 50%;
+      background-color: rgba($bleu-color, 0.5);
+    }
   }
 
   .about__content {
+    font-family: sans-serif;
     color: $green-color;
+    text-align: justify;
+    line-height: 1.3rem;
+    margin-top: 1rem;
 
     .about__content-link {
       color: $bleu-color;
+      font-weight: bold;
     }
   }
 }
