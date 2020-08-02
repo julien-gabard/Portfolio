@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import './board.scss';
 
 // == Component
-const Board = ({ displayBoard }) => {
+const Board = ({ displayBoard, clickBoardLink }) => {
   let boardClassname = 'board';
   let linkClassname = 'board__li';
 
@@ -15,23 +15,27 @@ const Board = ({ displayBoard }) => {
     linkClassname = 'board__li li-open';
   }
 
+  const handleClick = () => {
+    clickBoardLink();
+  };
+
   return (
     <div className={boardClassname}>
       <ul className="board__ul">
         <li className={linkClassname}>
-          <a href="#about" className="board__li-link">A propos</a>
+          <a href="#about" className="board__li-link" onClick={handleClick}>A propos</a>
         </li>
         <li className={linkClassname}>
-          <a href="#" className="board__li-link">Compétences</a>
+          <a href="#" className="board__li-link" onClick={handleClick}>Compétences</a>
         </li>
         <li className={linkClassname}>
-          <a href="#" className="board__li-link">Formation</a>
+          <a href="#" className="board__li-link" onClick={handleClick}>Formation</a>
         </li>
         <li className={linkClassname}>
-          <a href="#" className="board__li-link">Projets</a>
+          <a href="#" className="board__li-link" onClick={handleClick}>Projets</a>
         </li>
         <li className={linkClassname}>
-          <a href="#" className="board__li-link">Contact</a>
+          <a href="#" className="board__li-link" onClick={handleClick}>Contact</a>
         </li>
       </ul>
     </div>
@@ -41,6 +45,7 @@ const Board = ({ displayBoard }) => {
 // == PropTypes
 Board.propTypes = {
   displayBoard: PropTypes.bool,
+  clickBoardLink: PropTypes.func.isRequired,
 };
 
 // == PropTypes default
