@@ -50,9 +50,9 @@
 
     .app__link-up {
       position: absolute;
-      right: .5rem;
+      right: 1rem;
       animation-name: visibleButtonUp;
-      animation-duration: 300ms;
+      animation-duration: 500ms;
       animation-fill-mode: forwards;
 
       .app__link-up-icone {
@@ -60,7 +60,19 @@
       }
 
       &.visible {
-        display: none;
+        animation-name: invisivbleButtonUp;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+
+        @keyframes invisivbleButtonUp {
+          0% {
+            top: .6rem;
+          }
+          
+          100% {
+            top: -5rem;
+          }
+        }
       }
 
       @keyframes visibleButtonUp {
@@ -69,7 +81,7 @@
         }
         
         100% {
-          top: 0;
+          top: .6rem;
         }
       }
     }

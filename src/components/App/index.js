@@ -14,7 +14,7 @@ import About from 'src/components/About';
 import './app.scss';
 
 // == Import feather
-import { ChevronUp } from 'react-feather';
+import { ArrowUpCircle } from 'react-feather';
 
 // == Composant
 const App = ({ displayBoard, onHandleClick }) => {
@@ -60,7 +60,7 @@ const App = ({ displayBoard, onHandleClick }) => {
           </div>
         </button>
         <a href="#home" className={upButtonClass}>
-          <ChevronUp className="app__link-up-icone" size="50" />
+          <ArrowUpCircle className="app__link-up-icone" size="40" />
         </a>
       </div>
       <Board />
