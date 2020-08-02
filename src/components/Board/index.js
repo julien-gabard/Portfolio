@@ -22,7 +22,7 @@ const Board = ({ displayBoard }) => {
           <a href="#" className="board__li-link">Acceuil</a>
         </li>
         <li className={linkClassname}>
-          <a href="#" className="board__li-link">A propos</a>
+          <a href="#about" className="board__li-link">A propos</a>
         </li>
         <li className={linkClassname}>
           <a href="#" className="board__li-link">Compétences</a>

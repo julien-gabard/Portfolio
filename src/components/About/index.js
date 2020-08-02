@@ -9,7 +9,7 @@ import pictureProfile from '../../assets/images/moi.jpg';
 
 // == Component
 const About = () => (
-  <div className="about">
+  <div className="about" id="about">
     <div className="about-content">
       <div className="about-content__title">
         <h2 className="about-content__title-content">A propos</h2>
