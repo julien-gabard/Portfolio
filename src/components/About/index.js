@@ -25,9 +25,9 @@ const About = () => (
         qui ces terminer en mai 2020.
       </p>
       <p className="about-content__content">
-        Après, de nombreuse années dans la mécanique auto et dans la vente commerciale, il était temps
-        pour moi de me tourner vers un domaine qui me passionne depuis de nombreuse années et où
-        j'allais m'épanouir.
+        Après, de nombreuse années dans la mécanique auto et dans la vente commerciale,
+        il était temps pour moi de me tourner vers un domaine qui me passionne depuis
+        de nombreuse années et où j'allais m'épanouir.
       </p>
       <p className="about-content__content">
         Passionné par l'univers du web, j'ai naturellement choisi de me spécialiser dans les
