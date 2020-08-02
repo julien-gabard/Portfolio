@@ -9,7 +9,7 @@ import './home.scss';
 
 // == Component
 const Home = () => (
-  <div className="home">
+  <div className="home" id="home">
     <img src={saturnLogo} alt="logo-planet" className="home__logo" />
     <h1 className="home__name">Julien Gabard</h1>
     <p className="home__content">Développeur web</p>

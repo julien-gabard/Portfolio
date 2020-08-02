@@ -13,6 +13,9 @@ import About from 'src/components/About';
 // == Import scss
 import './app.scss';
 
+// == Import feather
+import { ChevronUp } from 'react-feather';
+
 // == Composant
 const App = ({ displayBoard, onHandleClick }) => {
   const handleClick = () => {
@@ -33,6 +36,9 @@ const App = ({ displayBoard, onHandleClick }) => {
           <div className={buttonClassname}>
             <div />
           </div>
+        </button>
+        <button type="button" className="app__button-up">
+          <ChevronUp className="app__button-up-icone" size="50" />
         </button>
       </div>
       <Board />

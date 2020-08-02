@@ -7,6 +7,8 @@
     position: fixed;
     width: 100%;
     top: 0;
+    display: flex;
+    align-items: center;
     z-index: 8;
 
     .app__button {
@@ -42,6 +44,18 @@
         &.open div {
           transform: scale(0);
         }
+      }
+    }
+
+    .app__button-up {
+      position: fixed;
+      right: .5rem;
+      background: none;
+      border: none;
+      padding: 0;
+
+      .app__button-up-icone {
+        color: $green-color;
       }
     }
   }
