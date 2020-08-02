@@ -1,5 +1,5 @@
 // == Import npm
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 // == Import components
@@ -18,26 +18,48 @@ import { ChevronUp } from 'react-feather';
 
 // == Composant
 const App = ({ displayBoard, onHandleClick }) => {
+  let buttonClass = 'nav-icon';
+  let upButtonClass = 'app__link-up';
+
+  const [scroll, setScroll] = useState(0);
+
   const handleClick = () => {
     onHandleClick();
   };
 
-  let buttonClassname = 'nav-icon';
+  const scrollStep = () => {
+    setScroll(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    const watchScroll = () => {
+      window.addEventListener('scroll', scrollStep);
+    };
+    watchScroll();
+    // Remove listener
+    return () => {
+      window.removeEventListener('scroll', scrollStep);
+    };
+  });
 
   if (displayBoard === true) {
-    buttonClassname = 'nav-icon open';
+    buttonClass = 'nav-icon open';
+  }
+
+  if (scroll === 0) {
+    upButtonClass = 'app__link-up visible';
   }
 
   return (
-    <div className="app">
+    <div className="app" onScroll={scrollStep}>
       <Background />
       <div className="app__menu">
         <button type="button" className="app__button" onClick={handleClick}>
-          <div className={buttonClassname}>
+          <div className={buttonClass}>
             <div />
           </div>
         </button>
-        <a href="#home" className="app__link-up">
+        <a href="#home" className={upButtonClass}>
           <ChevronUp className="app__link-up-icone" size="50" />
         </a>
       </div>

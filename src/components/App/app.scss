@@ -49,11 +49,28 @@
     }
 
     .app__link-up {
-      position: fixed;
+      position: absolute;
       right: .5rem;
+      animation-name: visibleButtonUp;
+      animation-duration: 300ms;
+      animation-fill-mode: forwards;
 
       .app__link-up-icone {
         color: $green-color;
+      }
+
+      &.visible {
+        display: none;
+      }
+
+      @keyframes visibleButtonUp {
+        0% {
+          top: -5rem;
+        }
+        
+        100% {
+          top: 0;
+        }
       }
     }
   }
