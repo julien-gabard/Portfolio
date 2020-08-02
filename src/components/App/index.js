@@ -37,9 +37,9 @@ const App = ({ displayBoard, onHandleClick }) => {
             <div />
           </div>
         </button>
-        <button type="button" className="app__button-up">
-          <ChevronUp className="app__button-up-icone" size="50" />
-        </button>
+        <a href="#home" className="app__link-up">
+          <ChevronUp className="app__link-up-icone" size="50" />
+        </a>
       </div>
       <Board />
       <Home />

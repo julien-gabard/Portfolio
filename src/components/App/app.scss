@@ -47,14 +47,11 @@
       }
     }
 
-    .app__button-up {
+    .app__link-up {
       position: fixed;
       right: .5rem;
-      background: none;
-      border: none;
-      padding: 0;
 
-      .app__button-up-icone {
+      .app__link-up-icone {
         color: $green-color;
       }
     }
