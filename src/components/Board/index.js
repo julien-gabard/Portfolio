@@ -19,6 +19,9 @@ const Board = ({ displayBoard }) => {
     <div className={boardClassname}>
       <ul className="board__ul">
         <li className={linkClassname}>
+          <a href="#" className="board__li-link">Acceuil</a>
+        </li>
+        <li className={linkClassname}>
           <a href="#" className="board__li-link">A propos</a>
         </li>
         <li className={linkClassname}>

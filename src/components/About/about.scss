@@ -23,9 +23,9 @@
       }
   
       .about-content__title-line {
-        height: 1px;
+        height: 2px;
         width: 50%;
-        background-color: rgba($bleu-color, 0.5);
+        background-color: $bleu-color;
       }
     }
   
@@ -45,7 +45,7 @@
 
   .about-profile {
     position: relative;
-    border: 2px solid $bleu-color;
+    border: 2px solid rgba($bleu-color, 0.5);
     border-radius: 50%;
     overflow: hidden;
     width: 200px;
@@ -57,6 +57,11 @@
       height: auto;
       top: -3.7em;
       left: -1em;
+      opacity: 0.5;
+    }
+
+    @media (max-height: 640px) {
+      display: none;
     }
   }
 }

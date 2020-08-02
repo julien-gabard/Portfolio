@@ -21,7 +21,7 @@ const About = () => (
       <p className="about-content__content">
         En novembre 2019, j'ai entamé une reconversion dans le domaine du développement web
         en suivant une formation intensive chez
-        <a href="https://oclock.io/?gclid=EAIaIQobChMIkoOAtvX56gIVCPhRCh1QLAvnEAAYASAAEgJ7afD_BwE" className="about__content-link"> O'clock </a>
+        <a href="https://oclock.io/?gclid=EAIaIQobChMIkoOAtvX56gIVCPhRCh1QLAvnEAAYASAAEgJ7afD_BwE" className="about-content__content-link"> O'clock </a>
         qui ces terminer en mai 2020.
       </p>
       <p className="about-content__content">
