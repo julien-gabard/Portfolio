@@ -14,8 +14,9 @@ import Skill from 'src/components/Skill';
 // == Import scss
 import './app.scss';
 
-// == Import feather
-import { ArrowUpCircle } from 'react-feather';
+// == Import ico
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 // == Composant
 const App = ({ displayBoard, onHandleClick }) => {
@@ -61,7 +62,7 @@ const App = ({ displayBoard, onHandleClick }) => {
           </div>
         </button>
         <a href="#home" className={upButtonClass}>
-          <ArrowUpCircle className="app__link-up-icone" size="40" />
+          <FontAwesomeIcon icon={faArrowUp} className="app__link-up-icone" />
         </a>
       </div>
       <Board />
