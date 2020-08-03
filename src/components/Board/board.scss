@@ -3,7 +3,8 @@
 .board {
   position: fixed;
   z-index: 6;
-  background-color: rgba($green-color, 0.95);
+  background-color: rgba($green-color, 0.65);
+  backdrop-filter: blur(10px);
   text-align: center;
   font-size: 20px;
   height: 100%;
@@ -26,6 +27,7 @@
       .board__li-link {
         text-transform: uppercase;
         font-weight: bold;
+        text-shadow: 0.1em 0.1em 0.2em rgba($grey-color, 0.5);
         padding: 1rem;
       }
 
