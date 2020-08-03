@@ -26,7 +26,7 @@ const Board = ({ displayBoard, clickBoardLink }) => {
           <a href="#about" className="board__li-link" onClick={handleClick}>A propos</a>
         </li>
         <li className={linkClassname}>
-          <a href="#" className="board__li-link" onClick={handleClick}>Compétences</a>
+          <a href="#skill" className="board__li-link" onClick={handleClick}>Compétences</a>
         </li>
         <li className={linkClassname}>
           <a href="#" className="board__li-link" onClick={handleClick}>Formation</a>

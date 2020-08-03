@@ -9,6 +9,7 @@ import Board from 'src/containers/Board';
 import Background from 'src/components/Background';
 import Home from 'src/components/Home';
 import About from 'src/components/About';
+import Skill from 'src/components/Skill';
 
 // == Import scss
 import './app.scss';
@@ -66,6 +67,7 @@ const App = ({ displayBoard, onHandleClick }) => {
       <Board />
       <Home />
       <About />
+      <Skill />
     </div>
   );
 };
