@@ -17,9 +17,10 @@
     justify-content: center;
 
     .skill__title-content {
-      font-size: 28px;
+      font-size: 24px;
       display: inline-block;
       margin-left: 1rem;
+      text-transform: uppercase;
     }
 
     .skill__title-line {
@@ -33,18 +34,71 @@
     width: 100%;
     text-align: center;
     border: 1px solid $bleu-color;
-    padding: 1.5rem;
     margin-top: 2rem;
 
     .skill__list-title {
-      
+      margin: 2rem 0;
+      font-size: 18px;
+      color: $green-color;
+      letter-spacing: 1px;
+    }
+
+    .skill__list-seperate {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 1rem;
+      height: 1px;
+      background-color: $bleu-color;
     }
 
     .skill__list-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
       .skill__list-item {
+        padding: 1rem;
         
+        .skill__list-item-logo {
+          width: auto;
+          height: 50px;
+        }
+
+        .skill__list-item-name {
+          font-size: 12px;
+          margin-top: .5rem;
+          font-family: sans-serif;
+        }
       }
+    }
+  }
+
+  .skill__personality {
+    border: 1px solid $bleu-color;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    .skill__personality-title {
+      font-size: 18px;
+      color: $green-color;
+      margin-bottom: 1rem;
+      margin-top: .5rem;
+      letter-spacing: 1px;
+    }
+
+    .skill__personality-seperate {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 1rem;
+      height: 1px;
+      background-color: $bleu-color;
+    }
+
+    .skill__personality-content {
+      margin-top: 1rem;
+      font-family: sans-serif;
     }
   }
 }
