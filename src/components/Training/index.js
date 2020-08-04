@@ -67,7 +67,9 @@ const Training = () => (
       </p>
     </div>
     <div className="training__logo">
-      <img src={Oclock} alt="logo" className="training__logo-img" />
+      <a href="https://oclock.io/?gclid=EAIaIQobChMIpMzH5uSB6wIVF4jVCh2BFgsREAAYASAAEgI9nfD_BwE">
+        <img src={Oclock} alt="logo" className="training__logo-img" />
+      </a>
     </div>
   </div>
 );
