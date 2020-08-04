@@ -32,7 +32,7 @@ const Board = ({ displayBoard, clickBoardLink }) => {
           <a href="#training" className="board__li-link" onClick={handleClick}>Formation</a>
         </li>
         <li className={linkClassname}>
-          <a href="#" className="board__li-link" onClick={handleClick}>Projets</a>
+          <a href="#project" className="board__li-link" onClick={handleClick}>Projets</a>
         </li>
         <li className={linkClassname}>
           <a href="#" className="board__li-link" onClick={handleClick}>Contact</a>
