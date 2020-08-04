@@ -6,10 +6,11 @@ import './training.scss';
 
 // == Import ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHandshake, faBookOpen, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faBookOpen, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 // == Import images
-import Oclock from '../../assets/images/Oclock.png';
+import OclockLogo from '../../assets/images/Oclock.png';
+import OpquastLogo from '../../assets/images/opquast.svg';
 
 // == Component
 const Training = () => (
@@ -26,19 +27,19 @@ const Training = () => (
       </p>
     </div>
     <div className="training__detail">
-      <FontAwesomeIcon icon={faClock} className="training__detail-icone" />
+      <FontAwesomeIcon icon={faCalendarAlt} className="training__detail-icone" />
       <p className="training__detail-p">
         3 mois de socle HTML5, CSS3, PHP et JavaScipt.
       </p>
     </div>
     <div className="training__detail">
-      <FontAwesomeIcon icon={faClock} className="training__detail-icone" />
+      <FontAwesomeIcon icon={faCalendarAlt} className="training__detail-icone" />
       <p className="training__detail-p">
         1 mois de spécialisation React, Redux.
       </p>
     </div>
     <div className="training__detail">
-      <FontAwesomeIcon icon={faClock} className="training__detail-icone" />
+      <FontAwesomeIcon icon={faCalendarAlt} className="training__detail-icone" />
       <p className="training__detail-p">
         1 mois de projet en conditions professionnelles
       </p>
@@ -68,7 +69,10 @@ const Training = () => (
     </div>
     <div className="training__logo">
       <a href="https://oclock.io/?gclid=EAIaIQobChMIpMzH5uSB6wIVF4jVCh2BFgsREAAYASAAEgI9nfD_BwE">
-        <img src={Oclock} alt="logo" className="training__logo-img" />
+        <img src={OclockLogo} alt="logo" className="training__logo-img" />
+      </a>
+      <a href="https://directory.opquast.com/fr/certificat/SRDTJA/">
+        <img src={OpquastLogo} alt="logo" className="training__logo-img" />
       </a>
     </div>
   </div>

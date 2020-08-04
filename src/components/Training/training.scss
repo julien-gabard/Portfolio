@@ -40,6 +40,7 @@
     .training__detail-icone {
       font-size: 20px;
       margin-right: 1rem;
+      color: $green-color;
     }
 
     .training__detail-p {
@@ -75,11 +76,15 @@
   }
 
   .training__logo {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
 
     .training__logo-img {
-      width: 100px;
+      width: 80px;
       height: auto;
+      opacity: .8;
     }
   }
 }
