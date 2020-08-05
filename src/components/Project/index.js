@@ -13,7 +13,7 @@ import { faLink, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 const Project = () => {
   const [scroll, setScroll] = useState(0);
 
-  let projectDownClass = 'project__down';
+  let projectDownClass = 'project__down-icone';
 
   const scrollStep = () => {
     setScroll(window.pageYOffset);
@@ -31,7 +31,7 @@ const Project = () => {
   });
 
   if (scroll > 3315) {
-    projectDownClass = 'project__down visible';
+    projectDownClass = 'project__down-icone visible';
   }
 
   return (
@@ -40,8 +40,8 @@ const Project = () => {
         <div className="project__title-line" />
         <h2 className="project__title-content">Projets</h2>
       </div>
-      <div className={projectDownClass}>
-        <FontAwesomeIcon icon={faAngleDown} className="project__down-icone" />
+      <div className="project__down">
+        <FontAwesomeIcon icon={faAngleDown} className={projectDownClass} />
       </div>
       <div className="project__content">
         <div className="project__card">
