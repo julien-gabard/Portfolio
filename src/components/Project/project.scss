@@ -61,14 +61,16 @@
 
       .project__card-list__label {
         display: flex;
+        flex-wrap: wrap;
         margin: 2rem 0;
-
+        
         .project__card-label {
           background-color: $grey-color;
           color: $white-color;
           font-family: sans-serif;
           padding: .5rem;
-          border-radius: 15px;
+          border-radius: 10px;
+          box-shadow: 1px 1px 3px $grey-color;
 
           &:nth-child(1n+2) {
             margin-left: .5rem;
