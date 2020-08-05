@@ -34,7 +34,8 @@
 
   .contact__detail {
     color: $white-color;
-    text-align: justify;
+    text-align: center;
+    line-height: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -48,6 +49,7 @@
     .contact__form-label {
       color: $white-color;
       text-align: center;
+      width: 100%;
 
       .contact__form-input {
         display: block;
@@ -57,10 +59,7 @@
         border-radius: 5px;
         padding: .5rem;
         opacity: 0.8;
-
-        &.email {
-          width: 300px;
-        }
+        width: 100%;
 
         &:invalid {
           background-color: $red-color;

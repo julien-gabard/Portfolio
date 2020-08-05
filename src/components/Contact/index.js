@@ -67,7 +67,7 @@ const Contact = ({ handleChange }) => {
         <label htmlFor="email" className="contact__form-label">
           Adresse Email *
           <input
-            className="contact__form-input email"
+            className="contact__form-input"
             type="email"
             name="email"
             id="email"
@@ -81,8 +81,7 @@ const Contact = ({ handleChange }) => {
           Message *
           <textarea
             rows="10"
-            cols="40"
-            className="contact__form-input message"
+            className="contact__form-input"
             name="message"
             id="message"
             placeholder="Votre message ..."
