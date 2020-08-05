@@ -1,11 +1,11 @@
 @import 'src/styles/_vars';
 
 .training {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  padding-top: 5rem;
 
   .training__title {
     color: $bleu-color;

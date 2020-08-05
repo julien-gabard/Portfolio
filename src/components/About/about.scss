@@ -1,11 +1,12 @@
 @import 'src/styles/_vars';
 
 .about {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
 
   .about-content {
     padding: 1rem;

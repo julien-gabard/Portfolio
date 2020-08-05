@@ -1,13 +1,14 @@
 @import 'src/styles/_vars';
 
 .skill {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $white-color;
   padding: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 
   .skill__title {
     color: $bleu-color;

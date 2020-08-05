@@ -1,11 +1,12 @@
 @import 'src/styles/_vars';
 
 .contact {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
 
   .contact__title {
     color: $bleu-color;
