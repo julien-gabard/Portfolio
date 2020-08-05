@@ -104,6 +104,7 @@ const Project = () => (
           <p className="project__card-label">React</p>
           <p className="project__card-label">Redux</p>
           <p className="project__card-label">Librairie AOS</p>
+          <p className="project__card-label">Lumen</p>
         </div>
         <div className="project__card-list-icone">
           <a href="https://github.com/julien-gabard/Todolist">
