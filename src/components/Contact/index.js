@@ -47,6 +47,7 @@ const Contact = () => (
           id="phone"
           placeholder="0* ** ** ** **"
           autoComplete="on"
+          pattern="([ 0-9-/-]*)"
         />
       </label>
       <label htmlFor="email" className="contact__form-label">
@@ -58,6 +59,7 @@ const Contact = () => (
           id="email"
           placeholder="exemple@gmail.com"
           autoComplete="on"
+          pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)"
           required
         />
       </label>
