@@ -1,6 +1,7 @@
 @import 'src/styles/_vars';
 
 .project {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -29,6 +30,23 @@
       margin-left: 1rem;
       text-transform: uppercase;
       letter-spacing: 1px;
+    }
+  }
+
+  .project__down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+
+    .project__down-icone {
+      font-size: 300px;
+      color: $bleu-color;
+      opacity: 0.5;
+    }
+
+    &.visible {
+      display: none;
     }
   }
 
