@@ -22,7 +22,6 @@ const Contact = () => (
           placeholder="Nom"
           autoComplete="on"
           pattern="([ a-zA-Z---áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]*)"
-          required
         />
       </label>
       <label htmlFor="firstName" className="contact__form-label">
@@ -35,7 +34,6 @@ const Contact = () => (
           placeholder="Prénom"
           autoComplete="on"
           pattern="([ a-zA-Z---áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]*)"
-          required
         />
       </label>
       <label htmlFor="phone" className="contact__form-label">
@@ -60,7 +58,6 @@ const Contact = () => (
           placeholder="exemple@gmail.com"
           autoComplete="on"
           pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)"
-          required
         />
       </label>
       <label htmlFor="message" className="contact__form-label">
@@ -74,7 +71,6 @@ const Contact = () => (
           placeholder="Votre message ..."
           autoComplete="off"
           pattern="([ a-zA-Z-0-9-,-.---_?!:()áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]*)"
-          required
         />
       </label>
     </form>

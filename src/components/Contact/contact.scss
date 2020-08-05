@@ -54,6 +54,10 @@
         &.email {
           width: 300px;
         }
+
+        &:invalid {
+          background-color: $red-color;
+        }
       }
 
       &:nth-child(1n+2) {
