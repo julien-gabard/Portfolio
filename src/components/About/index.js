@@ -34,8 +34,8 @@ const About = () => (
         langages axés UI plus particulièrement React.js.
       </p>
     </div>
-    <div className="about-profile">
-      <img src={pictureProfile} alt="julien" className="about-profile__picture" />
+    <div className="about-picture">
+      <img src={pictureProfile} alt="julien" className="about-picture__img" />
     </div>
   </div>
 );

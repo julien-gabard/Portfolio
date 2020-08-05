@@ -49,15 +49,16 @@
     }
   }
 
-  .about-profile {
+  .about-picture {
     position: relative;
     border: 2px solid rgba($bleu-color, 0.5);
     border-radius: 50%;
     overflow: hidden;
     width: 200px;
     height: 200px;
+    margin-top: 2rem;
 
-    .about-profile__picture {
+    .about-picture__img {
       position: absolute;
       width: 250px;
       height: auto;
