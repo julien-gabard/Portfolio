@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 // == Import components
 // == Containers
 import Board from 'src/containers/Board';
+import Contact from 'src/containers/Contact';
 // == Components
 import Background from 'src/components/Background';
 import Home from 'src/components/Home';
@@ -12,7 +13,6 @@ import About from 'src/components/About';
 import Skill from 'src/components/Skill';
 import Training from 'src/components/Training';
 import Project from 'src/components/Project';
-import Contact from 'src/components/Contact';
 
 // == Import scss
 import './app.scss';
