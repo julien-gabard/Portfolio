@@ -1,7 +1,6 @@
 @import 'src/styles/_vars';
 
 .project {
-  height: 100vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -98,6 +97,10 @@
       }
 
       &.project__oshop {
+        background-image: linear-gradient(rgba($green-color, 1));
+      }
+
+      &.project__portfolio {
         background-image: linear-gradient(rgba($green-color, 1));
       }
     }

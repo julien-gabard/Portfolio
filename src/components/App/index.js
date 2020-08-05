@@ -12,6 +12,7 @@ import About from 'src/components/About';
 import Skill from 'src/components/Skill';
 import Training from 'src/components/Training';
 import Project from 'src/components/Project';
+import Contact from 'src/components/Contact';
 
 // == Import scss
 import './app.scss';
@@ -73,6 +74,7 @@ const App = ({ displayBoard, onHandleClick }) => {
       <Skill />
       <Training />
       <Project />
+      <Contact />
     </div>
   );
 };

@@ -94,6 +94,24 @@ const Project = () => (
           </a>
         </div>
       </div>
+      <div className="project__card project__portfolio">
+        <h3 className="project__card-title">Portfolio v1.0</h3>
+        <p className="project__card-content">
+          Protfolio développer avec React / Redux. Animation faite en SCSS
+          et avec la librairie AOS.
+        </p>
+        <div className="project__card-list__label">
+          <p className="project__card-label">React</p>
+          <p className="project__card-label">Redux</p>
+          <p className="project__card-label">Librairie AOS</p>
+        </div>
+        <div className="project__card-list-icone">
+          <a href="https://github.com/julien-gabard/Todolist">
+            <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
+          </a>
+          <FontAwesomeIcon icon={faLink} className="project__card-icone" />
+        </div>
+      </div>
     </div>
   </div>
 );
