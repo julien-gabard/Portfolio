@@ -1,5 +1,10 @@
 @import 'src/styles/_vars';
 
+@font-face {
+  font-family: 'RockSalt';
+  src: url('../../assets/fonts/RockSalt-Regular.ttf');
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -14,6 +19,7 @@
 
   .footer__title {
     margin-left: .5rem;
+    font-family: 'RockSalt', sans-serif;
 
     .footer__title-copy {
       font-size: 22px;
