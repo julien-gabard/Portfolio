@@ -1,5 +1,5 @@
 // == Import actions
-import { CHANGE_FIELD } from 'src/actions/actionContact';
+import { CHANGE_FIELD, REGISTRATION_SUBMIT } from 'src/actions/actionContact';
 
 // == InitialSate
 const initialState = {
@@ -23,6 +23,16 @@ const contactReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         [target]: action.value,
+      };
+    }
+    case REGISTRATION_SUBMIT: {
+      return {
+        ...state,
+        lastName: '',
+        firstName: '',
+        phone: '',
+        email: '',
+        message: '',
       };
     }
     default: return state;

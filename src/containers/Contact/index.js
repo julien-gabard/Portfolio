@@ -8,7 +8,12 @@ import { changeField, registrationSubmit } from 'src/actions/actionContact';
 import Contact from 'src/components/Contact';
 
 // == Fonction props
-const mapStateToProps = (/* state */) => ({
+const mapStateToProps = (state) => ({
+  lastName: state.contact.lastName,
+  firstName: state.contact.firstName,
+  phone: state.contact.phone,
+  email: state.contact.email,
+  message: state.contact.message,
 });
 
 const mapDispatchToProps = (dispatch) => ({

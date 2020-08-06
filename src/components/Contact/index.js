@@ -10,7 +10,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 // == Component
-const Contact = ({ handleChange, registrationSubmit }) => {
+const Contact = ({
+  handleChange,
+  registrationSubmit,
+  lastName,
+  firstName,
+  phone,
+  email,
+  message,
+}) => {
   const changeField = (evt) => {
     handleChange(evt.target.name, evt.target.value);
   };
@@ -29,7 +37,7 @@ const Contact = ({ handleChange, registrationSubmit }) => {
       <p className="contact__detail">
         Les champs précédés d'un astérisque (*) sont obligatoires.
       </p>
-      <form className="contact__form">
+      <form className="contact__form" onSubmit={handleSubmit}>
         <label htmlFor="lastName" className="contact__form-label">
           Nom de famille *
           <input
@@ -41,6 +49,7 @@ const Contact = ({ handleChange, registrationSubmit }) => {
             autoComplete="on"
             pattern="([ a-zA-Z---áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]*)"
             onChange={changeField}
+            value={lastName}
           />
         </label>
         <label htmlFor="firstName" className="contact__form-label">
@@ -54,6 +63,7 @@ const Contact = ({ handleChange, registrationSubmit }) => {
             autoComplete="on"
             pattern="([ a-zA-Z---áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]*)"
             onChange={changeField}
+            value={firstName}
           />
         </label>
         <label htmlFor="phone" className="contact__form-label">
@@ -67,6 +77,7 @@ const Contact = ({ handleChange, registrationSubmit }) => {
             autoComplete="on"
             pattern="([ 0-9-/-]*)"
             onChange={changeField}
+            value={phone}
           />
         </label>
         <label htmlFor="email" className="contact__form-label">
@@ -80,6 +91,7 @@ const Contact = ({ handleChange, registrationSubmit }) => {
             autoComplete="on"
             pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)"
             onChange={changeField}
+            value={email}
           />
         </label>
         <label htmlFor="message" className="contact__form-label">
@@ -93,9 +105,10 @@ const Contact = ({ handleChange, registrationSubmit }) => {
             autoComplete="off"
             pattern="([ a-zA-Z-0-9-,-.---_?!:()áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]*)"
             onChange={changeField}
+            value={message}
           />
         </label>
-        <button type="submit" className="contact__form-button" onClick={handleSubmit}>
+        <button type="submit" className="contact__form-button">
           Envoyer
           <FontAwesomeIcon icon={faPaperPlane} className="contact__form-button-icone" />
         </button>
@@ -108,6 +121,11 @@ const Contact = ({ handleChange, registrationSubmit }) => {
 Contact.propTypes = {
   handleChange: PropTypes.func.isRequired,
   registrationSubmit: PropTypes.func.isRequired,
+  lastName: PropTypes.string.isRequired,
+  firstName: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
 };
 
 // == Export
