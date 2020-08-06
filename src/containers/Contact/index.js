@@ -2,7 +2,7 @@
 import { connect } from 'react-redux';
 
 // == Import actions
-import { changeField } from 'src/actions/actionContact';
+import { changeField, registrationSubmit } from 'src/actions/actionContact';
 
 // == Import component
 import Contact from 'src/components/Contact';
@@ -14,6 +14,9 @@ const mapStateToProps = (/* state */) => ({
 const mapDispatchToProps = (dispatch) => ({
   handleChange: (identifier, value) => {
     dispatch(changeField(identifier, value));
+  },
+  registrationSubmit: () => {
+    dispatch(registrationSubmit());
   },
 });
 

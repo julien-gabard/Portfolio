@@ -10,9 +10,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 // == Component
-const Contact = ({ handleChange }) => {
+const Contact = ({ handleChange, registrationSubmit }) => {
   const changeField = (evt) => {
     handleChange(evt.target.name, evt.target.value);
+  };
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    registrationSubmit();
   };
 
   return (
@@ -90,7 +95,7 @@ const Contact = ({ handleChange }) => {
             onChange={changeField}
           />
         </label>
-        <button type="submit" className="contact__form-button">
+        <button type="submit" className="contact__form-button" onClick={handleSubmit}>
           Envoyer
           <FontAwesomeIcon icon={faPaperPlane} className="contact__form-button-icone" />
         </button>
@@ -102,6 +107,7 @@ const Contact = ({ handleChange }) => {
 // == PropTypes
 Contact.propTypes = {
   handleChange: PropTypes.func.isRequired,
+  registrationSubmit: PropTypes.func.isRequired,
 };
 
 // == Export
