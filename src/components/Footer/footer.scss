@@ -33,6 +33,7 @@
     z-index: -1;
     top: -0.2rem;
     right: 3.85rem;
+    color: $white-color;
 
     .footer__list-link-linkedin {
       position: absolute;
@@ -69,7 +70,7 @@
         }
         
         100% {
-          top: 0rem;
+          top: 0.5rem;
           opacity: 0;
         }
       }
@@ -110,7 +111,7 @@
         }
         
         100% {
-          top: 0rem;
+          top: 0.5rem;
           opacity: 0;
         }
       }
@@ -151,7 +152,7 @@
         }
         
         100% {
-          top: 0rem;
+          top: 0.5rem;
           opacity: 0;
         }
       }
