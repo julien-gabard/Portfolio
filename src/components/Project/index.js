@@ -30,7 +30,7 @@ const Project = () => {
     };
   });
 
-  if (scroll > 3315) {
+  if (scroll > 3400) {
     projectDownClass = 'project__down-icone visible';
   }
 
