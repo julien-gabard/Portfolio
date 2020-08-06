@@ -42,7 +42,21 @@
     .project__down-icone {
       font-size: 300px;
       color: $bleu-color;
-      opacity: 0.5;
+      animation-name: blinkingIcon;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+
+      @keyframes blinkingIcon {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 0.3;
+        }
+      }
 
       &.visible {
         display: none;
