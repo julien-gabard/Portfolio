@@ -4,8 +4,13 @@ import React from 'react';
 // == Import scss
 import './about.scss';
 
+// == Import icone
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithubSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+
 // == Import images
 import pictureProfile from '../../assets/images/moi.jpg';
+
 
 // == Component
 const About = () => (
@@ -36,6 +41,17 @@ const About = () => (
     </div>
     <div className="about-picture">
       <img src={pictureProfile} alt="julien" className="about-picture__img" />
+    </div>
+    <div className="about__link-list">
+      <a href="https://www.linkedin.com/in/julien-gabard">
+        <FontAwesomeIcon icon={faLinkedin} className="about__link-list-icone" />
+      </a>
+      <a href="https://github.com/julien-gabard">
+        <FontAwesomeIcon icon={faGithubSquare} className="about__link-list-icone github" />
+      </a>
+      <a href="https://www.facebook.com/julien.gabard.3/">
+        <FontAwesomeIcon icon={faFacebookSquare} className="about__link-list-icone" />
+      </a>
     </div>
   </div>
 );

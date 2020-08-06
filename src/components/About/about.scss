@@ -1,10 +1,6 @@
 @import 'src/styles/_vars';
 
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   padding-top: 5rem;
   padding-bottom: 6rem;
 
@@ -49,14 +45,30 @@
     }
   }
 
+  .about__link-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .about__link-list-icone {
+      color: $bleu-color;
+      font-size: 40px;
+
+      &.github {
+        margin: 0 1rem;
+      }
+    }
+  }
+
   .about-picture {
     position: relative;
+    margin: auto;
+    margin-top: 1rem;
     border: 2px solid rgba($bleu-color, 0.5);
     border-radius: 50%;
     overflow: hidden;
     width: 200px;
     height: 200px;
-    margin-top: 2rem;
 
     .about-picture__img {
       position: absolute;
