@@ -1,0 +1,160 @@
+@import 'src/styles/_vars';
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: $green-color;
+  width: 100%;
+  background-color: rgba($grey-color, 0.7);
+  backdrop-filter: blur(5px);
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer__title {
+    margin-left: .5rem;
+
+    .footer__title-copy {
+      font-size: 22px;
+    }
+  }
+
+  .footer__user {
+    margin-right: 1rem;
+
+    .footer__user-icone {
+      font-size: 40px;
+    }
+  }
+
+  .footer__list {
+    position: absolute;
+    z-index: -1;
+    top: -0.2rem;
+    right: 3.85rem;
+
+    .footer__list-link-linkedin {
+      position: absolute;
+      animation-name: showLinkedinOff;
+      animation-duration: 200ms;
+      animation-fill-mode: forwards;
+      
+      .footer__list-link-icone {
+        font-size: 40px;
+      }
+
+      &.show__linkedin {
+        animation-name: showLinkedinOn;
+        animation-duration: 200ms;
+        animation-fill-mode: forwards;
+
+        @keyframes showLinkedinOn {
+          0% {
+            opacity: 0;
+            top: 0rem;
+          }
+          
+          100% {
+            opacity: 1;
+            top: -3rem;
+          }
+        }
+      }
+
+      @keyframes showLinkedinOff {
+        0% {
+          top: -3rem;
+          opacity: 1;
+        }
+        
+        100% {
+          top: 0rem;
+          opacity: 0;
+        }
+      }
+    }
+
+    .footer__list-link-github {
+      position: absolute;
+      animation-name: showGithubOff;
+      animation-duration: 400ms;
+      animation-fill-mode: forwards;
+
+      .footer__list-link-icone {
+        font-size: 40px;
+      }
+
+      &.show__github {
+        animation-name: showGithubOn;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+
+        @keyframes showGithubOn {
+          0% {
+            opacity: 0;
+            top: 0rem;
+          }
+          
+          100% {
+            opacity: 1;
+            top: -6rem;
+          }
+        }
+      }
+
+      @keyframes showGithubOff {
+        0% {
+          top: -6rem;
+          opacity: 1;
+        }
+        
+        100% {
+          top: 0rem;
+          opacity: 0;
+        }
+      }
+    }
+
+    .footer__list-link-facebook {
+      position: absolute;
+      animation-name: showFacebookOff;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+
+      .footer__list-link-icone {
+        font-size: 40px;
+      }
+
+      &.show__facebook {
+        animation-name: showFacebookOn;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+
+        @keyframes showFacebookOn {
+          0% {
+            opacity: 0;
+            top: 0rem;
+          }
+          
+          100% {
+            opacity: 1;
+            top: -9rem;
+          }
+        }
+      }
+
+      @keyframes showFacebookOff {
+        0% {
+          top: -9rem;
+          opacity: 1;
+        }
+        
+        100% {
+          top: 0rem;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

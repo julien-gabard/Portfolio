@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 // == Containers
 import Board from 'src/containers/Board';
 import Contact from 'src/containers/Contact';
+import Footer from 'src/containers/Footer';
 // == Components
 import Background from 'src/components/Background';
 import Home from 'src/components/Home';
@@ -75,6 +76,7 @@ const App = ({ displayBoard, onHandleClick }) => {
       <Training />
       <Project />
       <Contact />
+      <Footer />
     </div>
   );
 };
