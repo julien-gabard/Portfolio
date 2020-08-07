@@ -7,7 +7,7 @@ import './footer.scss';
 
 // == Import ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFolder, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+import { faShareAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 // == Component
@@ -30,8 +30,7 @@ const Footer = ({ showIcons, clickShowIcons }) => {
     <div className="footer">
       <h4 className="footer__title">Julien Gabard Copyright <span className="footer__title-copy">&copy;</span></h4>
       <div className="footer__user" onClick={handleClick}>
-        {!showIcons && <FontAwesomeIcon icon={faFolder} className="footer__user-icone" />}
-        {showIcons && <FontAwesomeIcon icon={faFolderOpen} className="footer__user-icone" />}
+        <FontAwesomeIcon icon={faShareAlt} className="footer__user-icone" />
       </div>
       <div className="footer__list">
         <a href="https://www.linkedin.com/in/julien-gabard" className={animeIconLinkedin}>
