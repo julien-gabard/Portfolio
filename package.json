@@ -59,6 +59,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "aos": "^2.3.4",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
