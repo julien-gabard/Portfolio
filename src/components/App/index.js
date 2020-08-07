@@ -2,6 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
+// == Impor AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // == Import components
 // == Containers
 import Board from 'src/containers/Board';
@@ -38,6 +42,7 @@ const App = ({ displayBoard, onHandleClick }) => {
   };
 
   useEffect(() => {
+    AOS.init();
     const watchScroll = () => {
       window.addEventListener('scroll', scrollStep);
     };
