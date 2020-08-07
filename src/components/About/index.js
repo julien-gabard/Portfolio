@@ -11,7 +11,6 @@ import { faLinkedin, faGithubSquare, faFacebookSquare } from '@fortawesome/free-
 // == Import images
 import pictureProfile from '../../assets/images/moi.jpg';
 
-
 // == Component
 const About = () => (
   <div className="about" id="about">
