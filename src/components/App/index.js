@@ -61,13 +61,6 @@ const App = ({ displayBoard, onHandleClick }) => {
     upButtonClass = 'app__link-up visible';
   }
 
-  // console.log(scroll);
-  // console.log(document.getElementsByClassName('app'));
-
-  // if (scroll) {
-  //   console.log('coucouc');
-  // }
-
   return (
     <div className="app" onScroll={scrollStep}>
       <Background />
