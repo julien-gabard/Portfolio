@@ -67,13 +67,15 @@ const Training = () => (
         à la base de données (MCD et dictionnaire de données).
       </p>
     </div>
-    <div className="training__logo">
-      <a href="https://oclock.io/?gclid=EAIaIQobChMIpMzH5uSB6wIVF4jVCh2BFgsREAAYASAAEgI9nfD_BwE">
-        <img src={OclockLogo} alt="logo" className="training__logo-img" />
-      </a>
-      <a href="https://directory.opquast.com/fr/certificat/SRDTJA/">
-        <img src={OpquastLogo} alt="logo" className="training__logo-img" />
-      </a>
+    <div data-aos="fade-down" data-aos-duration="2000">
+      <div className="training__logo">
+        <a href="https://oclock.io/?gclid=EAIaIQobChMIpMzH5uSB6wIVF4jVCh2BFgsREAAYASAAEgI9nfD_BwE">
+          <img src={OclockLogo} alt="logo" className="training__logo-img" />
+        </a>
+        <a href="https://directory.opquast.com/fr/certificat/SRDTJA/">
+          <img src={OpquastLogo} alt="logo" className="training__logo-img" />
+        </a>
+      </div>
     </div>
   </div>
 );
