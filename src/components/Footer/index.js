@@ -34,7 +34,7 @@ const Footer = ({ showIcons, clickShowIcons }) => {
 
   return (
     <div className="footer">
-      <h4 className="footer__title">Julien Gabard Copyright <span className="footer__title-copy">&copy;</span></h4>
+      <h4 className="footer__title">Julien Gabard <span className="footer__title-copy">&copy;</span></h4>
       <div className="footer__user" onClick={handleClick}>
         <FontAwesomeIcon icon={faShareAlt} className="footer__user-icone" />
       </div>
