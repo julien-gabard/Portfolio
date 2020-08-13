@@ -11,15 +11,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3.6rem;
   animation-name: offDisplayBoard;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   
   .board__ul {
+    margin-top: -3rem;
 
     .board__li {
       letter-spacing: 2px;
-      margin: 5rem 0;
       animation-name: offDisplayLink;
       animation-duration: 150ms;
       animation-fill-mode: forwards;
@@ -45,6 +46,10 @@
             transform: translateX(0);
           }
         }
+      }
+
+      &:nth-child(2n+2) {
+        margin: 5rem 0;
       }
 
       @keyframes offDisplayLink {
