@@ -17,7 +17,7 @@ const Project = () => (
       <h2 className="project__title-content">Projets</h2>
     </div>
     <div className="project__content">
-      <div data-aos="flip-up" data-aos-offset="100" data-aos-duration="1000">
+      <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
         <div className="project__card">
           <h3 className="project__card-title">Snake</h3>
           <p className="project__card-content">
@@ -37,7 +37,7 @@ const Project = () => (
           </div>
         </div>
       </div>
-      <div data-aos="flip-up" data-aos-offset="100" data-aos-duration="1000">
+      <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
         <div className="project__card project__jeveuxpermuter">
           <h3 className="project__card-title">jeveuxpermuter.com</h3>
           <p className="project__card-content">
@@ -62,7 +62,7 @@ const Project = () => (
           </div>
         </div>
       </div>
-      <div data-aos="flip-up" data-aos-offset="100" data-aos-duration="1000">
+      <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
         <div className="project__card project__todolist">
           <h3 className="project__card-title">TodoList</h3>
           <p className="project__card-content">
@@ -84,13 +84,13 @@ const Project = () => (
           </div>
         </div>
       </div>
-      <div data-aos="flip-up" data-aos-offset="100" data-aos-duration="1000">
+      <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
         <div className="project__card project__oshop">
           <h3 className="project__card-title">Oshop (back-end)</h3>
           <p className="project__card-content">
             Back-end de l'application Oshop réalisé en cours. Possibilité de créer un compte,
             de se connecter et gestion des comptes en admin.
-            Créer, éditer et supprimer des produits, catégories, etc.
+            Créer, éditer et sdownprimer des produits, catégories, etc.
           </p>
           <div className="project__card-list__label">
             <p className="project__card-label">Lumen</p>
@@ -102,7 +102,7 @@ const Project = () => (
           </div>
         </div>
       </div>
-      <div data-aos="flip-up" data-aos-offset="100" data-aos-duration="1000">
+      <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
         <div className="project__card project__portfolio">
           <h3 className="project__card-title">Portfolio v1.0</h3>
           <p className="project__card-content">
