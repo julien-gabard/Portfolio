@@ -18,9 +18,6 @@ import Skill from 'src/components/Skill';
 import Training from 'src/components/Training';
 import Project from 'src/components/Project';
 
-// == Import scss
-import './app.scss';
-
 // == Composant
 const App = () => {
   useEffect(() => {
