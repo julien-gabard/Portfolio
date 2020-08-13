@@ -73,6 +73,10 @@
             top: -3rem;
           }
         }
+
+        &:hover {
+          color: $bleu-color;
+        }
       }
 
       @keyframes showLinkedinOff {
@@ -114,6 +118,10 @@
             top: -6rem;
           }
         }
+
+        &:hover {
+          color: $bleu-color;
+        }
       }
 
       @keyframes showGithubOff {
@@ -154,6 +162,10 @@
             opacity: 1;
             top: -9rem;
           }
+        }
+
+        &:hover {
+          color: $bleu-color;
         }
       }
 
