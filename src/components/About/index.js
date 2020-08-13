@@ -46,7 +46,7 @@ const About = () => (
         </p>
       </div>
     </div>
-    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+    <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000">
       <div className="about-picture">
         <img src={pictureProfile} alt="julien" className="about-picture__img" />
       </div>
