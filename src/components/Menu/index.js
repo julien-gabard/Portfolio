@@ -57,6 +57,23 @@ const Menu = ({ displayBoard, onHandleClick }) => {
         <a href="#home" className={upButtonClass}>
           <FontAwesomeIcon icon={faArrowUp} className="menu__link-up-icone" />
         </a>
+        <ul className="menu__list-link-ul">
+          <li className="menu__list-link-li">
+            <a href="#about" className="menu__list-link-a">A propos</a>
+          </li>
+          <li className="menu__list-link-li">
+            <a href="#skill" className="menu__list-link-a">Compétences</a>
+          </li>
+          <li className="menu__list-link-li">
+            <a href="#training" className="menu__list-link-a">Formation</a>
+          </li>
+          <li className="menu__list-link-li">
+            <a href="#project" className="menu__list-link-a">Projets</a>
+          </li>
+          <li className="menu__list-link-li">
+            <a href="#contact" className="menu__list-link-a">Contact</a>
+          </li>
+        </ul>
       </div>
       <Board />
     </>
