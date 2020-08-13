@@ -2,14 +2,14 @@
 import { connect } from 'react-redux';
 
 // == Import actions
-import { menuButtonAction } from 'src/actions/actionApp';
+import { menuButtonAction } from 'src/actions/actionMenu';
 
 // == Import component
 import Board from 'src/components/Board';
 
 // == Fonction props
 const mapStateToProps = (state) => ({
-  displayBoard: state.app.displayBoard,
+  displayBoard: state.menu.displayBoard,
 });
 
 const mapDispatchToProps = (dispatch) => ({

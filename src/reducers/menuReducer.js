@@ -1,5 +1,5 @@
 // == Import actions
-import { MENU_BUTTON_ACTION } from 'src/actions/actionApp';
+import { MENU_BUTTON_ACTION } from 'src/actions/actionMenu';
 
 // == InitialSate
 const initialState = {
@@ -7,7 +7,7 @@ const initialState = {
 };
 
 // == Component
-const appReducer = (state = initialState, action = {}) => {
+const menuReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case MENU_BUTTON_ACTION: {
       return {
@@ -20,4 +20,4 @@ const appReducer = (state = initialState, action = {}) => {
 };
 
 // == Export
-export default appReducer;
+export default menuReducer;

@@ -2,13 +2,13 @@
 import { combineReducers } from 'redux';
 
 // == Import reducer
-import appReducer from './appReducer';
+import menuReducer from './menuReducer';
 import contactReducer from './contactReducer';
 import footerReducer from './footerReducer';
 
 // == Component
 const rootReducer = combineReducers({
-  app: appReducer,
+  menu: menuReducer,
   contact: contactReducer,
   footer: footerReducer,
 });

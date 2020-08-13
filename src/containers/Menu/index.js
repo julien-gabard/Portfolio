@@ -2,14 +2,14 @@
 import { connect } from 'react-redux';
 
 // == Import actions
-import { menuButtonAction } from 'src/actions/actionApp';
+import { menuButtonAction } from 'src/actions/actionMenu';
 
 // == Import component
-import App from 'src/components/App';
+import Menu from 'src/components/Menu';
 
 // == Fonction props
 const mapStateToProps = (state) => ({
-  displayBoard: state.app.displayBoard,
+  displayBoard: state.menu.displayBoard,
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -22,4 +22,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(App);
+)(Menu);
