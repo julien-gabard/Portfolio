@@ -79,6 +79,7 @@ const Skill = () => (
       <p className="skill__personality-content">Travail en équipe</p>
       <p className="skill__personality-content">Curieux</p>
       <p className="skill__personality-content">Rigoureux</p>
+      <p className="skill__personality-content">Ambitieux</p>
     </div>
   </div>
 );
