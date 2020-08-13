@@ -80,3 +80,16 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .about-content {
+      width: 50%;
+    }
+  }
+}

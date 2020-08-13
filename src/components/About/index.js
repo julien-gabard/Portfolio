@@ -19,12 +19,12 @@ const About = () => (
         <h2 className="about-content__title-content">A propos</h2>
         <div className="about-content__title-line" />
       </div>
-      <div data-aos="zoom-in" data-aos-offset="100">
+      <div data-aos="zoom-in" data-aos-offset="200">
         <p className="about-content__content">
           Bonjour moi c'est Julien, développeur web curieux, rigoureux et autonome.
         </p>
       </div>
-      <div data-aos="zoom-in" data-aos-offset="100">
+      <div data-aos="zoom-in" data-aos-offset="200">
         <p className="about-content__content">
           En novembre 2019, j'ai entamé une reconversion dans le domaine du développement web
           en suivant une formation intensive chez
@@ -32,35 +32,39 @@ const About = () => (
           qui ces terminer en mai 2020.
         </p>
       </div>
-      <div data-aos="zoom-in" data-aos-offset="100">
+      <div data-aos="zoom-in" data-aos-offset="200">
         <p className="about-content__content">
           Après, de nombreuse années dans la mécanique auto et dans la vente commerciale,
           il était temps pour moi de me tourner vers un domaine qui me passionne depuis
           de nombreuse années et où j'allais m'épanouir.
         </p>
       </div>
-      <div data-aos="zoom-in" data-aos-offset="100">
+      <div data-aos="zoom-in" data-aos-offset="200">
         <p className="about-content__content">
           Passionné par l'univers du web, j'ai naturellement choisi de me spécialiser dans les
           langages axés UI plus particulièrement React.js.
         </p>
       </div>
     </div>
-    <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000">
-      <div className="about-picture">
-        <img src={pictureProfile} alt="julien" className="about-picture__img" />
+    <div className="about-author">
+      <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="linear" data-aos-duration="1000">
+        <div className="about-picture">
+          <img src={pictureProfile} alt="julien" className="about-picture__img" />
+        </div>
       </div>
-    </div>
-    <div className="about__link-list">
-      <a href="https://www.linkedin.com/in/julien-gabard">
-        <FontAwesomeIcon icon={faLinkedin} className="about__link-list-icone" />
-      </a>
-      <a href="https://github.com/julien-gabard">
-        <FontAwesomeIcon icon={faGithubSquare} className="about__link-list-icone github" />
-      </a>
-      <a href="https://www.facebook.com/julien.gabard.3/">
-        <FontAwesomeIcon icon={faFacebookSquare} className="about__link-list-icone" />
-      </a>
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div className="about__link-list">
+          <a href="https://www.linkedin.com/in/julien-gabard">
+            <FontAwesomeIcon icon={faLinkedin} className="about__link-list-icone" />
+          </a>
+          <a href="https://github.com/julien-gabard">
+            <FontAwesomeIcon icon={faGithubSquare} className="about__link-list-icone github" />
+          </a>
+          <a href="https://www.facebook.com/julien.gabard.3/">
+            <FontAwesomeIcon icon={faFacebookSquare} className="about__link-list-icone" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 );
