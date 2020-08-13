@@ -2,6 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
+// == Import components
+// == Containers
+import Board from 'src/containers/Board';
+
 // == Import SCSS
 import './menu.scss';
 
@@ -43,16 +47,19 @@ const Menu = ({ displayBoard, onHandleClick }) => {
   }
 
   return (
-    <div className="menu" onScroll={scrollStep}>
-      <button type="button" className="menu__button" onClick={handleClick}>
-        <div className={buttonClass}>
-          <div />
-        </div>
-      </button>
-      <a href="#home" className={upButtonClass}>
-        <FontAwesomeIcon icon={faArrowUp} className="menu__link-up-icone" />
-      </a>
-    </div>
+    <>
+      <div className="menu" onScroll={scrollStep}>
+        <button type="button" className="menu__button" onClick={handleClick}>
+          <div className={buttonClass}>
+            <div />
+          </div>
+        </button>
+        <a href="#home" className={upButtonClass}>
+          <FontAwesomeIcon icon={faArrowUp} className="menu__link-up-icone" />
+        </a>
+      </div>
+      <Board />
+    </>
   );
 };
 

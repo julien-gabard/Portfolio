@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { menuButtonAction } from 'src/actions/actionMenu';
 
 // == Import component
-import Board from 'src/components/Board';
+import Board from 'src/components/Menu/Board';
 
 // == Fonction props
 const mapStateToProps = (state) => ({

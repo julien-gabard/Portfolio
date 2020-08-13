@@ -7,7 +7,6 @@ import 'aos/dist/aos.css';
 
 // == Import components
 // == Containers
-import Board from 'src/containers/Board';
 import Contact from 'src/containers/Contact';
 import Footer from 'src/containers/Footer';
 import Menu from 'src/containers/Menu';
@@ -32,7 +31,6 @@ const App = () => {
     <div className="app">
       <Background />
       <Menu />
-      <Board />
       <Home />
       <About />
       <Skill />
