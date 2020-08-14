@@ -120,7 +120,6 @@ const Contact = ({
               id="phone"
               placeholder="0* ** ** ** **"
               autoComplete="on"
-              // pattern="([ 0-9-/-]*)"
               onChange={changeField}
               value={phone}
             />
