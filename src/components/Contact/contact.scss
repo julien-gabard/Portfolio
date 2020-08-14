@@ -61,8 +61,12 @@
         opacity: 0.8;
         width: 100%;
 
-        &.input__valide {
+        &.input__valid {
           background-color: $bleu-color;
+        }
+
+        &.input__invalid {
+          background-color: $red-color;
         }
       }
 
@@ -76,8 +80,12 @@
         opacity: 0.8;
         width: 100%;
 
-        &.input__valide {
+        &.input__valid {
           background-color: $bleu-color;
+        }
+
+        &.input__invalid {
+          background-color: $red-color;
         }
       }
 
@@ -91,8 +99,12 @@
         opacity: 0.8;
         width: 100%;
 
-        &.input__valide {
+        &.input__valid {
           background-color: $bleu-color;
+        }
+
+        &.input__invalid {
+          background-color: $red-color;
         }
       }
 
@@ -106,8 +118,12 @@
         opacity: 0.8;
         width: 100%;
 
-        &.input__valide {
+        &.input__valid {
           background-color: $bleu-color;
+        }
+
+        &.input__invalid {
+          background-color: $red-color;
         }
       }
 
@@ -121,8 +137,12 @@
         opacity: 0.8;
         width: 100%;
 
-        &.input__valide {
+        &.input__valid {
           background-color: $bleu-color;
+        }
+
+        &.input__invalid {
+          background-color: $red-color;
         }
       }
 

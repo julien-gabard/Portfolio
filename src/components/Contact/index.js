@@ -19,10 +19,10 @@ const Contact = ({
   email,
   message,
 }) => {
-  // == Regex validate input
+  // == Regex validat input
   const regexName = RegExp(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u);
   const regexText = RegExp(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'?!:-]+$/u);
-  const regexNumber = RegExp(/^[0-9 ./-]+$/i);
+  const regexNumber = RegExp(/^(0|(00|\+)33)[67][0-9]{8}$/);
   const regexEmail = RegExp(/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/);
 
   // == ClassName input
@@ -34,33 +34,48 @@ const Contact = ({
 
   useEffect(() => {
     if (regexName.test(lastName)) {
-      setLastNameClass('contact__form-input-lastName input__valide');
+      setLastNameClass('contact__form-input-lastName input__valid');
     }
-    if (regexName.test(lastName) === false) {
+    if (regexName.test(lastName) === false && lastName !== '') {
+      setLastNameClass('contact__form-input-lastName input__invalid');
+    }
+    if (lastName === '') {
       setLastNameClass('contact__form-input-lastName');
     }
     if (regexName.test(firstName)) {
-      setfirstNameClass('contact__form-input-firstName input__valide');
+      setfirstNameClass('contact__form-input-firstName input__valid');
     }
-    if (regexName.test(firstName) === false) {
+    if (regexName.test(firstName) === false && firstName !== '') {
+      setfirstNameClass('contact__form-input-firstName input__invalid');
+    }
+    if (firstName === '') {
       setfirstNameClass('contact__form-input-firstName');
     }
     if (regexNumber.test(phone)) {
-      setPhoneClass('contact__form-input-phone input__valide');
+      setPhoneClass('contact__form-input-phone input__valid');
     }
-    if (regexNumber.test(phone) === false) {
+    if (regexNumber.test(phone) === false && phone !== '') {
+      setPhoneClass('contact__form-input-phone input__invalid');
+    }
+    if (phone === '') {
       setPhoneClass('contact__form-input-phone');
     }
     if (regexEmail.test(email)) {
-      setEmailClass('contact__form-input-email input__valide');
+      setEmailClass('contact__form-input-email input__valid');
     }
-    if (regexEmail.test(email) === false) {
+    if (regexEmail.test(email) === false && email !== '') {
+      setEmailClass('contact__form-input-email input__invalid');
+    }
+    if (email === '') {
       setEmailClass('contact__form-input-email');
     }
     if (regexText.test(message)) {
-      setMessaheClass('contact__form-input-message input__valide');
+      setMessaheClass('contact__form-input-message input__valid');
     }
-    if (regexText.test(message) === false) {
+    if (regexText.test(message) === false && message !== '') {
+      setMessaheClass('contact__form-input-message input__invalid');
+    }
+    if (message === '') {
       setMessaheClass('contact__form-input-message');
     }
   });
