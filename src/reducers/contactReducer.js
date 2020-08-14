@@ -20,9 +20,10 @@ const contactReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case CHANGE_FIELD: {
       const target = action.identifier;
+      const { value } = action;
       return {
         ...state,
-        [target]: action.value,
+        [target]: value,
       };
     }
     case REGISTRATION_SUBMIT: {

@@ -51,7 +51,7 @@
       text-align: center;
       width: 100%;
 
-      .contact__form-input {
+      .contact__form-input-lastName {
         display: block;
         margin-top: .5rem;
         background-color: $green-color;
@@ -61,8 +61,68 @@
         opacity: 0.8;
         width: 100%;
 
-        &:invalid {
-          background-color: $red-color;
+        &.input__valide {
+          background-color: $bleu-color;
+        }
+      }
+
+      .contact__form-input-firstName {
+        display: block;
+        margin-top: .5rem;
+        background-color: $green-color;
+        border: none;
+        border-radius: 5px;
+        padding: .5rem;
+        opacity: 0.8;
+        width: 100%;
+
+        &.input__valide {
+          background-color: $bleu-color;
+        }
+      }
+
+      .contact__form-input-phone {
+        display: block;
+        margin-top: .5rem;
+        background-color: $green-color;
+        border: none;
+        border-radius: 5px;
+        padding: .5rem;
+        opacity: 0.8;
+        width: 100%;
+
+        &.input__valide {
+          background-color: $bleu-color;
+        }
+      }
+
+      .contact__form-input-email {
+        display: block;
+        margin-top: .5rem;
+        background-color: $green-color;
+        border: none;
+        border-radius: 5px;
+        padding: .5rem;
+        opacity: 0.8;
+        width: 100%;
+
+        &.input__valide {
+          background-color: $bleu-color;
+        }
+      }
+
+      .contact__form-input-message {
+        display: block;
+        margin-top: .5rem;
+        background-color: $green-color;
+        border: none;
+        border-radius: 5px;
+        padding: .5rem;
+        opacity: 0.8;
+        width: 100%;
+
+        &.input__valide {
+          background-color: $bleu-color;
         }
       }
 
