@@ -33,7 +33,7 @@ const Project = () => (
             <a href="https://github.com/julien-gabard/Snake-Game">
               <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
             </a>
-            <FontAwesomeIcon icon={faLink} className="project__card-icone" />
+            <FontAwesomeIcon icon={faLink} className="project__card-icone" color="red" />
           </div>
         </div>
       </div>
@@ -80,7 +80,10 @@ const Project = () => (
             <a href="https://github.com/julien-gabard/Todolist">
               <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
             </a>
-            <FontAwesomeIcon icon={faLink} className="project__card-icone" />
+            <a href="https://github.com/julien-gabard/Todolist-api">
+              <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
+            </a>
+            <FontAwesomeIcon icon={faLink} className="project__card-icone" color="red" />
           </div>
         </div>
       </div>

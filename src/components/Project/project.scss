@@ -83,7 +83,7 @@
         font-size: 24px;
         letter-spacing: 1px;
         color: $bleu-color;
-        text-shadow: 0em 0em .2em $white-color;
+        text-shadow: 1px 1px 3px $grey-color;
       }
 
       .project__card-content {
@@ -135,7 +135,7 @@
       }
 
       &.project__portfolio {
-        background-image: linear-gradient(rgba($green-color, 1));
+        background-image: linear-gradient(rgba($green-color, 0.8)), url(../../assets/images/portfolio.png);
       }
     }
   }
