@@ -49,7 +49,7 @@ const About = () => (
     <div className="about-author">
       <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="linear" data-aos-duration="1000">
         <div className="about-picture">
-          <img src={pictureProfile} alt="julien" className="about-picture__img" />
+          <img src={pictureProfile} alt="julien" title="Photo de profile de Julien Gabard" className="about-picture__img" />
         </div>
       </div>
       <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
