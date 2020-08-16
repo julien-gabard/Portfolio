@@ -57,7 +57,7 @@ const Project = () => (
               <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
             </a>
             <a href="https://jeveuxpermuter.com/">
-              <FontAwesomeIcon icon={faLink} className="project__card-icone" />
+              <FontAwesomeIcon icon={faLink} className="project__card-icone" color="red" />
             </a>
           </div>
         </div>
