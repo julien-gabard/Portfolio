@@ -79,9 +79,11 @@ const Project = () => (
           <div className="project__card-list-icone">
             <a href="https://github.com/julien-gabard/Todolist">
               <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
+              <p className="project__card-icone__name">Front</p>
             </a>
             <a href="https://github.com/julien-gabard/Todolist-api">
               <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
+              <p className="project__card-icone__name">Back</p>
             </a>
             <FontAwesomeIcon icon={faLink} className="project__card-icone" color="red" />
           </div>
