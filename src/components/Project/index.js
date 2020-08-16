@@ -19,7 +19,7 @@ const Project = () => (
     <div className="project__content">
       <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
         <div className="project__card">
-          <h3 className="project__card-title">Snake</h3>
+          <h3 className="project__card-title">Snake v0.4.3</h3>
           <p className="project__card-content">
             Le projet est un petit jeu Snake sur navigateur. Je prévois un système de score,
             de difficultés et d'un historique des scores avec le pseudo de la personne.
