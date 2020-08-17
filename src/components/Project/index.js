@@ -98,6 +98,7 @@ const Project = () => (
             Créer, éditer et sdownprimer des produits, catégories, etc.
           </p>
           <div className="project__card-list__label">
+            <p className="project__card-label">PHP</p>
             <p className="project__card-label">Lumen</p>
           </div>
           <div className="project__card-list-icone">
@@ -117,6 +118,7 @@ const Project = () => (
           <div className="project__card-list__label">
             <p className="project__card-label">React</p>
             <p className="project__card-label">Redux</p>
+            <p className="project__card-label">Axios</p>
             <p className="project__card-label">Librairie AOS</p>
             <p className="project__card-label">PHP</p>
           </div>
