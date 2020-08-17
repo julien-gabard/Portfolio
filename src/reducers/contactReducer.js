@@ -1,5 +1,5 @@
 // == Import actions
-import { CHANGE_FIELD, REGISTRATION_SUBMIT } from 'src/actions/actionContact';
+import { CHANGE_FIELD, REGISTRATION_SUBMIT, FORM_ERROR } from 'src/actions/actionContact';
 
 // == InitialSate
 const initialState = {
@@ -21,6 +21,8 @@ const initialState = {
   regexNumber: RegExp(/^(0|(00|\+)33)[67][0-9]{8}$/),
   // Regex validate email
   regexEmail: RegExp(/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/),
+  // Error message when submitting the form
+  messageError: '',
 };
 
 // == Component
@@ -42,6 +44,12 @@ const contactReducer = (state = initialState, action = {}) => {
         phone: '',
         email: '',
         message: '',
+      };
+    }
+    case FORM_ERROR: {
+      return {
+        ...state,
+        messageError: action.value,
       };
     }
     default: return state;
