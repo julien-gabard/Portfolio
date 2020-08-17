@@ -1,16 +1,27 @@
 // == Import npm
-import { createStore } from 'redux';
-import { devToolsEnhancer } from 'redux-devtools-extension';
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+// == Import middleware
+import contactMiddleware from 'src/middleware/contactMiddleware';
 
 // == Import reducer
 import reducer from 'src/reducers';
+
+// == Combine devTools avec le middleware
+const enhancers = composeWithDevTools(
+  applyMiddleware(
+    // ... middlewares
+    contactMiddleware,
+  ),
+);
 
 // == Store
 const store = createStore(
   // reducer
   reducer,
   // enhancer
-  devToolsEnhancer(),
+  enhancers,
 );
 
 // == Export

@@ -18,13 +18,11 @@ const Contact = ({
   phone,
   email,
   message,
+  regexName,
+  regexText,
+  regexNumber,
+  regexEmail,
 }) => {
-  // == Regex validat input
-  const regexName = RegExp(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u);
-  const regexText = RegExp(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'?!:-]+$/u);
-  const regexNumber = RegExp(/^(0|(00|\+)33)[67][0-9]{8}$/);
-  const regexEmail = RegExp(/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/);
-
   // == ClassName input
   const [lastNameClass, setLastNameClass] = useState('contact__form-input-lastName');
   const [firstNameClass, setfirstNameClass] = useState('contact__form-input-firstName');
@@ -184,6 +182,10 @@ Contact.propTypes = {
   phone: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
+  regexName: PropTypes.instanceOf(RegExp).isRequired,
+  regexText: PropTypes.instanceOf(RegExp).isRequired,
+  regexNumber: PropTypes.instanceOf(RegExp).isRequired,
+  regexEmail: PropTypes.instanceOf(RegExp).isRequired,
 };
 
 // == Export

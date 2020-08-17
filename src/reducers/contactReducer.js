@@ -13,6 +13,14 @@ const initialState = {
   email: '',
   // value of the message field of the contact form
   message: '',
+  // Regex validate lastName and firstName
+  regexName: RegExp(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u),
+  // Regex validate message
+  regexText: RegExp(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'?!:-]+$/u),
+  // Regex validate phone
+  regexNumber: RegExp(/^(0|(00|\+)33)[67][0-9]{8}$/),
+  // Regex validate email
+  regexEmail: RegExp(/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/),
 };
 
 // == Component
