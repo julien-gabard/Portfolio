@@ -95,7 +95,7 @@ const Project = () => (
           <p className="project__card-content">
             Back-end de l'application Oshop réalisé en cours. Possibilité de créer un compte,
             de se connecter et gestion des comptes en admin.
-            Créer, éditer et sdownprimer des produits, catégories, etc.
+            Créer, éditer et supprimer des produits, catégories, etc.
           </p>
           <div className="project__card-list__label">
             <p className="project__card-label">PHP</p>
