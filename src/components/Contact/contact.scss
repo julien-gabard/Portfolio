@@ -50,6 +50,7 @@
 
     &.error__message {
       color: $red-color;
+      background: linear-gradient(rgba($black-color, 0.2) 70%, rgba($bleu-color ,1) 150%);
     }
 
     &.sent__message {
@@ -63,7 +64,7 @@
       }
 
       100% {
-        font-size: 16px;
+        font-size: 18px;
         height: 100%;
       }
     }
