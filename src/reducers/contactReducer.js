@@ -24,7 +24,7 @@ const initialState = {
   // Regex validate message
   regexText: RegExp(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'?!:-]+$/u),
   // Regex validate phone
-  regexNumber: RegExp(/^(0|(00|\+)33)[67][0-9]{8}$/),
+  regexNumber: RegExp(/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/),
   // Regex validate email
   regexEmail: RegExp(/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/),
   // Error message when submitting the form
