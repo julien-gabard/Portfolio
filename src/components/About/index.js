@@ -52,7 +52,7 @@ const About = () => (
           <img src={pictureProfile} alt="julien" title="Photo de profile de Julien Gabard" className="about-picture__img" />
         </div>
       </div>
-      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
         <div className="about__link-list">
           <a href="https://www.linkedin.com/in/julien-gabard">
             <FontAwesomeIcon icon={faLinkedin} className="about__link-list-icone" />

@@ -18,6 +18,9 @@ const mapStateToProps = (state) => ({
   regexText: state.contact.regexText,
   regexNumber: state.contact.regexNumber,
   regexEmail: state.contact.regexEmail,
+  messageError: state.contact.messageError,
+  messageSent: state.contact.messageSent,
+  showMsg: state.contact.showMsg,
 });
 
 const mapDispatchToProps = (dispatch) => ({

@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     .contact__title-content {
       font-size: 24px;
@@ -36,7 +36,21 @@
     color: $white-color;
     text-align: center;
     line-height: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact__show-message {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: .5rem;
+
+    &.error__message {
+      color: $red-color;
+    }
+
+    &.sent__message {
+      color: $bleu-color;
+    }
   }
 
   .contact__form {

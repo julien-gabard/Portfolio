@@ -22,6 +22,9 @@ const Contact = ({
   regexText,
   regexNumber,
   regexEmail,
+  messageError,
+  messageSent,
+  showMsg,
 }) => {
   // == ClassName input
   const [lastNameClass, setLastNameClass] = useState('contact__form-input-lastName');
@@ -30,7 +33,10 @@ const Contact = ({
   const [emailClass, setEmailClass] = useState('contact__form-input-email');
   const [messageClass, setMessaheClass] = useState('contact__form-input-message');
 
-  // == Show message error
+  // == ClassName show message
+  const [showMessage, setShowMessage] = useState('contact__show-message');
+
+  // == Show message error input
   const [errorLastName, setErrorLastName] = useState(false);
   const [errorFirstName, setErrorFirstName] = useState(false);
   const [errorPhone, setErrorPhone] = useState(false);
@@ -98,6 +104,12 @@ const Contact = ({
       setMessaheClass('contact__form-input-message');
       setErrorMessage(false);
     }
+    if (messageError) {
+      setShowMessage('contact__show-message error__message');
+    }
+    if (messageSent) {
+      setShowMessage('contact__show-message sent__message');
+    }
   });
 
   const changeField = (evt) => {
@@ -118,6 +130,7 @@ const Contact = ({
       <p className="contact__detail">
         Les champs précédés d'un astérisque (*) sont obligatoires.
       </p>
+      {showMsg && <p className={showMessage}>{messageError}</p>}
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <form className="contact__form" onSubmit={handleSubmit}>
           <label htmlFor="lastName" className="contact__form-label">
@@ -213,6 +226,9 @@ Contact.propTypes = {
   regexText: PropTypes.instanceOf(RegExp).isRequired,
   regexNumber: PropTypes.instanceOf(RegExp).isRequired,
   regexEmail: PropTypes.instanceOf(RegExp).isRequired,
+  messageError: PropTypes.string.isRequired,
+  messageSent: PropTypes.string.isRequired,
+  showMsg: PropTypes.bool.isRequired,
 };
 
 // == Export

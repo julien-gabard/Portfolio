@@ -1,5 +1,11 @@
 // == Import actions
-import { CHANGE_FIELD, REGISTRATION_SUBMIT, FORM_ERROR } from 'src/actions/actionContact';
+import {
+  CHANGE_FIELD,
+  REGISTRATION_SUBMIT,
+  FORM_ERROR,
+  FORM_SENT,
+  SHOW_MESSAGE,
+} from 'src/actions/actionContact';
 
 // == InitialSate
 const initialState = {
@@ -23,6 +29,10 @@ const initialState = {
   regexEmail: RegExp(/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/),
   // Error message when submitting the form
   messageError: '',
+  // Message when the message is sent
+  messageSent: '',
+  // display send or error message
+  showMsg: false,
 };
 
 // == Component
@@ -50,6 +60,18 @@ const contactReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         messageError: action.value,
+      };
+    }
+    case FORM_SENT: {
+      return {
+        ...state,
+        messageSent: action.value,
+      };
+    }
+    case SHOW_MESSAGE: {
+      return {
+        ...state,
+        showMsg: !state.showMsg,
       };
     }
     default: return state;
