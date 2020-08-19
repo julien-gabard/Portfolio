@@ -130,7 +130,7 @@ const Contact = ({
       <p className="contact__detail">
         Les champs précédés d'un astérisque (*) sont obligatoires.
       </p>
-      {showMsg && <p className={showMessage}>{messageError}</p>}
+      {showMsg && <p className={showMessage}>{messageError !== '' ? messageError : messageSent}</p>}
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <form className="contact__form" onSubmit={handleSubmit}>
           <label htmlFor="lastName" className="contact__form-label">

@@ -8,6 +8,14 @@ import {
 
 // == Middleware
 const leMiddleware = (store) => (next) => (action) => {
+  const messageTimeout = () => {
+    store.dispatch(store.getState().contact.showMsg === true ? clearTimeout() : showMessage());
+    if (store.getState().contact.showMsg === true) {
+      setTimeout(() => {
+        store.dispatch(showMessage());
+      }, 10000);
+    }
+  };
   switch (action.type) {
     case REGISTRATION_SUBMIT:
       if (
@@ -16,14 +24,14 @@ const leMiddleware = (store) => (next) => (action) => {
         && store.getState().contact.regexEmail.test(store.getState().contact.email)
         && store.getState().contact.regexText.test(store.getState().contact.message)) {
         // console.log('soumis');
+        store.dispatch(formError(''));
         store.dispatch(formSent('Message envoyer'));
+        messageTimeout();
       }
       else {
+        store.dispatch(formSent(''));
         store.dispatch(formError('Veuillez entré des données valides.'));
-        store.dispatch(showMessage());
-        setTimeout(() => {
-          store.dispatch(showMessage());
-        }, 10000);
+        messageTimeout();
       }
       next(action);
       break;
