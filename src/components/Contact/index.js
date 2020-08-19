@@ -30,51 +30,73 @@ const Contact = ({
   const [emailClass, setEmailClass] = useState('contact__form-input-email');
   const [messageClass, setMessaheClass] = useState('contact__form-input-message');
 
+  // == Show message error
+  const [errorLastName, setErrorLastName] = useState(false);
+  const [errorFirstName, setErrorFirstName] = useState(false);
+  const [errorPhone, setErrorPhone] = useState(false);
+  const [errorEmail, setErrorEmail] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
+
   useEffect(() => {
     if (regexName.test(lastName)) {
       setLastNameClass('contact__form-input-lastName input__valid');
+      setErrorLastName(false);
     }
     if (regexName.test(lastName) === false && lastName !== '') {
       setLastNameClass('contact__form-input-lastName input__invalid');
+      setErrorLastName(true);
     }
     if (lastName === '') {
       setLastNameClass('contact__form-input-lastName');
+      setErrorLastName(false);
     }
     if (regexName.test(firstName)) {
       setfirstNameClass('contact__form-input-firstName input__valid');
+      setErrorFirstName(false);
     }
     if (regexName.test(firstName) === false && firstName !== '') {
       setfirstNameClass('contact__form-input-firstName input__invalid');
+      setErrorFirstName(true);
     }
     if (firstName === '') {
       setfirstNameClass('contact__form-input-firstName');
+      setErrorFirstName(false);
     }
     if (regexNumber.test(phone)) {
       setPhoneClass('contact__form-input-phone input__valid');
+      setErrorPhone(false);
     }
     if (regexNumber.test(phone) === false && phone !== '') {
       setPhoneClass('contact__form-input-phone input__invalid');
+      setErrorPhone(true);
     }
     if (phone === '') {
       setPhoneClass('contact__form-input-phone');
+      setErrorPhone(false);
     }
     if (regexEmail.test(email)) {
       setEmailClass('contact__form-input-email input__valid');
+      setErrorEmail(false);
     }
     if (regexEmail.test(email) === false && email !== '') {
       setEmailClass('contact__form-input-email input__invalid');
+      setErrorEmail(true);
     }
     if (email === '') {
       setEmailClass('contact__form-input-email');
+      setErrorEmail(false);
     }
     if (regexText.test(message)) {
       setMessaheClass('contact__form-input-message input__valid');
+      setErrorMessage(false);
     }
     if (regexText.test(message) === false && message !== '') {
       setMessaheClass('contact__form-input-message input__invalid');
+      setErrorMessage(true);
     }
     if (message === '') {
       setMessaheClass('contact__form-input-message');
+      setErrorMessage(false);
     }
   });
 
@@ -99,17 +121,18 @@ const Contact = ({
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <form className="contact__form" onSubmit={handleSubmit}>
           <label htmlFor="lastName" className="contact__form-label">
-            Nom de famille *
+            Nom *
             <input
               className={lastNameClass}
               type="text"
               name="lastName"
               id="lastName"
-              placeholder="Nom"
+              placeholder="Votre nom de famille"
               autoComplete="on"
               onChange={changeField}
               value={lastName}
             />
+            {errorLastName && <p className="contact__form-p">Le nom saisis est invalide.</p>}
           </label>
           <label htmlFor="firstName" className="contact__form-label">
             Prénom *
@@ -118,11 +141,12 @@ const Contact = ({
               type="text"
               name="firstName"
               id="firstName"
-              placeholder="Prénom"
+              placeholder="Votre prénom"
               autoComplete="on"
               onChange={changeField}
               value={firstName}
             />
+            {errorFirstName && <p className="contact__form-p">Le prénom saisis est invalide.</p>}
           </label>
           <label htmlFor="phone" className="contact__form-label">
             Téléphone
@@ -131,11 +155,12 @@ const Contact = ({
               type="tel"
               name="phone"
               id="phone"
-              placeholder="0* ** ** ** **"
+              placeholder="Votre numéro de téléphone sans espaces"
               autoComplete="on"
               onChange={changeField}
               value={phone}
             />
+            {errorPhone && <p className="contact__form-p">Le téléphone saisis est invalide.</p>}
           </label>
           <label htmlFor="email" className="contact__form-label">
             Adresse Email *
@@ -144,11 +169,12 @@ const Contact = ({
               type="email"
               name="email"
               id="email"
-              placeholder="exemple@gmail.com"
+              placeholder="exemple@exemple.com"
               autoComplete="on"
               onChange={changeField}
               value={email}
             />
+            {errorEmail && <p className="contact__form-p">L'adresse mail saisis est invalide.</p>}
           </label>
           <label htmlFor="message" className="contact__form-label">
             Message *
@@ -162,6 +188,7 @@ const Contact = ({
               onChange={changeField}
               value={message}
             />
+            {errorMessage && <p className="contact__form-p">Le message saisis est invalide.</p>}
           </label>
           <button type="submit" className="contact__form-button">
             Envoyer

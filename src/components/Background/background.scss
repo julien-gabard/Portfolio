@@ -3,10 +3,12 @@
 @function multiple-box-shadow ($n) {
   $value: '#{random(2000)}px #{random(2000)}px #FFF';
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #{rgb(random(255),random(255),random(255))}';
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
   }
   @return unquote($value);
 }
+
+// #{rgb(random(255),random(255),random(255))}
 
 $shadows-small:  multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
