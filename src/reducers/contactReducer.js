@@ -1,7 +1,7 @@
 // == Import actions
 import {
   CHANGE_FIELD,
-  REGISTRATION_SUBMIT,
+  EMPTY_SUBMITTED,
   FORM_ERROR,
   FORM_SENT,
   SHOW_MESSAGE,
@@ -46,7 +46,7 @@ const contactReducer = (state = initialState, action = {}) => {
         [target]: value,
       };
     }
-    case REGISTRATION_SUBMIT: {
+    case EMPTY_SUBMITTED: {
       return {
         ...state,
         lastName: '',

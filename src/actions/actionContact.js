@@ -4,6 +4,7 @@ export const REGISTRATION_SUBMIT = 'REGISTRATION_SUBMIT';
 export const FORM_ERROR = 'FORM_ERROR';
 export const FORM_SENT = 'FORM_SENT';
 export const SHOW_MESSAGE = 'SHOW_MESSAGE';
+export const EMPTY_SUBMITTED = 'EMPTY_SUBMITTED';
 
 // == Components
 // Returns the value of the contact form fields.
@@ -33,4 +34,9 @@ export const formSent = (value) => ({
 // Show message sent or error
 export const showMessage = () => ({
   type: SHOW_MESSAGE,
+});
+
+// Empty form fields when submitted
+export const emptySubmitted = () => ({
+  type: EMPTY_SUBMITTED,
 });

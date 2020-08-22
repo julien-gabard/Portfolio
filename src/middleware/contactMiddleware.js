@@ -1,9 +1,13 @@
+// == Import axios
+import axios from 'axios';
+
 // == Import actions
 import {
   REGISTRATION_SUBMIT,
   formError,
   formSent,
   showMessage,
+  emptySubmitted,
 } from 'src/actions/actionContact';
 
 // == Middleware
@@ -23,10 +27,22 @@ const leMiddleware = (store) => (next) => (action) => {
         && store.getState().contact.regexName.test(store.getState().contact.firstName)
         && store.getState().contact.regexEmail.test(store.getState().contact.email)
         && store.getState().contact.regexText.test(store.getState().contact.message)) {
-        // console.log('soumis');
-        store.dispatch(formError(''));
-        store.dispatch(formSent('Message envoyer'));
-        messageTimeout();
+        const data = new FormData();
+        data.append('lastName', store.getState().contact.lastName);
+        data.append('firstName', store.getState().contact.firstName);
+        data.append('phone', store.getState().contact.phone);
+        data.append('email', store.getState().contact.email);
+        data.append('message', store.getState().contact.message);
+
+        axios.post('http://localhost:3002/api/contact.php', data)
+          .then((response) => {
+            if (response.status === 200) {
+              store.dispatch(formError(''));
+              store.dispatch(formSent('Message envoyer'));
+              store.dispatch(emptySubmitted());
+              messageTimeout();
+            }
+          });
       }
       else {
         store.dispatch(formSent(''));
