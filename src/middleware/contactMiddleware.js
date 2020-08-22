@@ -34,7 +34,7 @@ const leMiddleware = (store) => (next) => (action) => {
         data.append('email', store.getState().contact.email);
         data.append('message', store.getState().contact.message);
 
-        axios.post('http://localhost:3002/api/contact.php', data)
+        axios.post('http://54.167.206.247/Sharck-Portfolio/api/contact.php', data)
           .then((response) => {
             if (response.status === 200) {
               store.dispatch(formError(''));
