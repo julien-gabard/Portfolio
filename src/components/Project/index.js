@@ -33,7 +33,9 @@ const Project = () => (
             <a href="https://github.com/julien-gabard/Snake-Game">
               <FontAwesomeIcon icon={faGithub} className="project__card-icone" />
             </a>
-            <FontAwesomeIcon icon={faLink} className="project__card-icone" color="red" />
+            <a href="http://54.167.206.247/Snake/">
+              <FontAwesomeIcon icon={faLink} className="project__card-icone" />
+            </a>
           </div>
         </div>
       </div>
