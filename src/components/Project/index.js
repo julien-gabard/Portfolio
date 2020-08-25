@@ -43,7 +43,7 @@ const Project = () => (
         <div className="project__card project__jeveuxpermuter">
           <h3 className="project__card-title">jeveuxpermuter.com</h3>
           <p className="project__card-content">
-            Le site permet à un agent de la fonction publique de pouvoirs trouvé un permutant
+            Le site permet à un agent de la fonction publique de pouvoir trouver un permutant
             facilement dans toute la France. Pour l'instant, il est orienté pour la police,
             on a le projet de l'ouvrir a plus de corps de métiers de la fonction
             publique comme par exemple les hôpitaux, la gendarmerie...
@@ -97,7 +97,7 @@ const Project = () => (
         <div className="project__card project__oshop">
           <h3 className="project__card-title">Oshop (back-end)</h3>
           <p className="project__card-content">
-            Back-end de l'application Oshop réalisé en cours. Possibilité de créer un compte,
+            Back-end de l'application Oshop réalisée en cours. Possibilité de créer un compte,
             de se connecter et gestion des comptes en admin.
             Créer, éditer et supprimer des produits, catégories, etc.
           </p>
@@ -116,7 +116,7 @@ const Project = () => (
         <div className="project__card project__portfolio">
           <h3 className="project__card-title">Portfolio v1.0</h3>
           <p className="project__card-content">
-            Protfolio développer avec React / Redux. Animation faite en SCSS
+            Protfolio développé avec React / Redux. Animation faite en SCSS
             et avec la librairie AOS.
           </p>
           <div className="project__card-list__label">

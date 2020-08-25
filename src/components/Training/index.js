@@ -53,7 +53,7 @@ const Training = () => (
     <div className="training__content">
       <p className="training__content-p">
         Cette formation m'a permis d'acquérir les bonnes pratiques : écrire un code propre, lisible,
-        créer des sites entièrement responcive, savoir chercher les réponses à un problème,
+        créer des sites entièrement responsive, savoir chercher les réponses à un problème,
         et finalement, j'ai appris à apprendre.
       </p>
       <p className="training__content-p">

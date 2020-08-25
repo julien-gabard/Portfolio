@@ -29,7 +29,7 @@ const About = () => (
           En novembre 2019, j'ai entamé une reconversion dans le domaine du développement web
           en suivant une formation intensive chez
           <a href="https://oclock.io/?gclid=EAIaIQobChMIkoOAtvX56gIVCPhRCh1QLAvnEAAYASAAEgJ7afD_BwE" className="about-content__content-link"> O'clock </a>
-          qui ces terminer en mai 2020.
+          qui s'est terminée en mai 2020.
         </p>
       </div>
       <div data-aos="zoom-in" data-aos-offset="200">
