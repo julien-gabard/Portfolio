@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandshake, faBookOpen, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 // == Import images
-import OclockLogo from '../../assets/images/Oclock.png';
+import OclockLogo from '../../assets/images/Oclock.jpg';
 import OpquastLogo from '../../assets/images/opquast.svg';
 
 // == Component
