@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithubSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 // == Import images
-import pictureProfile from '../../assets/images/moi.jpg';
+import pictureProfile from '../../assets/images/moi.webp';
 
 // == Component
 const About = () => (

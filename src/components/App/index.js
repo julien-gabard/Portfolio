@@ -1,9 +1,7 @@
 // == Import npm
 import React, { useEffect } from 'react';
-
-// == Impor AOS
+// == AOS
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 // == Import components
 // == Containers
@@ -17,6 +15,9 @@ import About from 'src/components/About';
 import Skill from 'src/components/Skill';
 import Training from 'src/components/Training';
 import Project from 'src/components/Project';
+
+// == Impor AOS css
+import 'aos/dist/aos.css';
 
 // == Composant
 const App = () => {

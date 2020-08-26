@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandshake, faBookOpen, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 // == Import images
-import OclockLogo from '../../assets/images/Oclock.jpg';
+import OclockLogo from '../../assets/images/Oclock.webp';
 import OpquastLogo from '../../assets/images/opquast.svg';
 
 // == Import SCSS
