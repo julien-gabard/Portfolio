@@ -1,9 +1,6 @@
 // == Import npm
 import React from 'react';
 
-// == Import SCSS
-import './training.scss';
-
 // == Import ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandshake, faBookOpen, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +8,9 @@ import { faHandshake, faBookOpen, faCalendarAlt } from '@fortawesome/free-solid-
 // == Import images
 import OclockLogo from '../../assets/images/Oclock.jpg';
 import OpquastLogo from '../../assets/images/opquast.svg';
+
+// == Import SCSS
+import './training.scss';
 
 // == Component
 const Training = () => (

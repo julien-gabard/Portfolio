@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-// == Import SCSS
-import './contact.scss';
-
 // == Import ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
+// == Import SCSS
+import './contact.scss';
 
 // == Component
 const Contact = ({

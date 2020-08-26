@@ -1,13 +1,13 @@
 // == Import npm
 import React from 'react';
 
-// == Import scss
-import './project.scss';
-
 // == Import ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+
+// == Import scss
+import './project.scss';
 
 // == Component
 const Project = () => (

@@ -1,9 +1,6 @@
 // == Import npm
 import React from 'react';
 
-// == Import SCSS
-import './skill.scss';
-
 // == Import ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -18,6 +15,9 @@ import {
   faBootstrap,
   faLaravel,
 } from '@fortawesome/free-brands-svg-icons';
+
+// == Import SCSS
+import './skill.scss';
 
 // == Component
 const Skill = () => (

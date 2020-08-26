@@ -6,12 +6,12 @@ import PropTypes from 'prop-types';
 // == Containers
 import Board from 'src/containers/Board';
 
-// == Import SCSS
-import './menu.scss';
-
 // == Import ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+
+// == Import SCSS
+import './menu.scss';
 
 const Menu = ({ displayBoard, onHandleClick }) => {
   let buttonClass = 'nav-icon';
