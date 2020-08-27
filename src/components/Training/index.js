@@ -7,7 +7,7 @@ import { faHandshake, faBookOpen, faCalendarAlt } from '@fortawesome/free-solid-
 
 // == Import images
 import OclockLogo from '../../assets/images/Oclock.webp';
-import OpquastLogo from '../../assets/images/opquast.svg';
+import OpquastLogo from '../../assets/images/opquast.webp';
 
 // == Import SCSS
 import './training.scss';
