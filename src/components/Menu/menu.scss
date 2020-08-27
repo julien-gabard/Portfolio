@@ -51,9 +51,7 @@
   .menu__link-up {
     position: absolute;
     right: 1rem;
-    animation-name: visibleButtonUp;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
+    animation: 500ms forwards visibleButtonUp;
 
     .menu__link-up-icone {
       color: $green-color;
@@ -61,9 +59,7 @@
     }
 
     &.visible {
-      animation-name: invisivbleButtonUp;
-      animation-duration: 500ms;
-      animation-fill-mode: forwards;
+      animation: 500ms forwards invisivbleButtonUp;
 
       @keyframes invisivbleButtonUp {
         0% {

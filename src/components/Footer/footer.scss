@@ -49,18 +49,14 @@
 
     .footer__list-link-linkedin {
       position: absolute;
-      animation-name: showLinkedinOff;
-      animation-duration: 600ms;
-      animation-fill-mode: forwards;
+      animation: 600ms forwards showLinkedinOff;
       
       .footer__list-link-icone {
         font-size: 40px;
       }
 
       &.show__linkedin {
-        animation-name: showLinkedinOn;
-        animation-duration: 200ms;
-        animation-fill-mode: forwards;
+        animation: 200ms forwards showLinkedinOn;
 
         @keyframes showLinkedinOn {
           0% {
@@ -94,18 +90,14 @@
 
     .footer__list-link-github {
       position: absolute;
-      animation-name: showGithubOff;
-      animation-duration: 400ms;
-      animation-fill-mode: forwards;
+      animation: 400ms forwards showGithubOff;
 
       .footer__list-link-icone {
         font-size: 40px;
       }
 
       &.show__github {
-        animation-name: showGithubOn;
-        animation-duration: 400ms;
-        animation-fill-mode: forwards;
+        animation: 400ms forwards showGithubOn;
 
         @keyframes showGithubOn {
           0% {
@@ -139,18 +131,14 @@
 
     .footer__list-link-facebook {
       position: absolute;
-      animation-name: showFacebookOff;
-      animation-duration: 200ms;
-      animation-fill-mode: forwards;
+      animation: 200ms forwards showFacebookOff;
 
       .footer__list-link-icone {
         font-size: 40px;
       }
 
       &.show__facebook {
-        animation-name: showFacebookOn;
-        animation-duration: 600ms;
-        animation-fill-mode: forwards;
+        animation: 600ms forwards showFacebookOn;
 
         @keyframes showFacebookOn {
           0% {

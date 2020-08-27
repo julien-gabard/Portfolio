@@ -29,9 +29,7 @@
       }
 
       &.li-close {
-        animation-name: offDisplayLink;
-        animation-duration: 150ms;
-        animation-fill-mode: forwards;
+        animation: 150ms forwards offDisplayLink;
 
         @keyframes offDisplayLink {
           0% {
@@ -45,9 +43,7 @@
       }
 
       &.li-open {
-        animation-name: onDisplayLink;
-        animation-duration: .8s;
-        animation-fill-mode: forwards;
+        animation: 800ms forwards onDisplayLink;
 
         @keyframes onDisplayLink {
           0% {
@@ -67,9 +63,7 @@
   }
 
   &.board-open {
-    animation-name: onDisplayBoard;
-    animation-duration: 400ms;
-    animation-fill-mode: forwards;
+    animation: 400ms forwards onDisplayBoard;
 
     @keyframes onDisplayBoard {
       0% {
@@ -83,9 +77,7 @@
   }
 
   &.board-close {
-    animation-name: offDisplayBoard;
-    animation-duration: 400ms;
-    animation-fill-mode: forwards;
+    animation: 400ms forwards offDisplayBoard;
 
     @keyframes offDisplayBoard {
       0% {
