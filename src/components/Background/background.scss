@@ -8,8 +8,6 @@
   @return unquote($value);
 }
 
-// #{rgb(random(255),random(255),random(255))}
-
 $shadows-small:  multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big:    multiple-box-shadow(100);
