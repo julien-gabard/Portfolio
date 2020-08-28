@@ -6,6 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
+// == Import image
+import snakeImg from '../../assets/images/snake.webp';
+import jeveuxpermuterImg from '../../assets/images/jeveuxpermuter.webp';
+import todolistImg from '../../assets/images/todolist.webp';
+import portfolioImg from '../../assets/images/portfolio.webp';
+
 // == Import scss
 import './project.scss';
 
@@ -19,6 +25,7 @@ const Project = () => (
     <div className="project__content">
       <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
         <div className="project__card">
+          <img src={snakeImg} alt="snake.webp" className="project__card-image" />
           <h3 className="project__card-title">Snake v0.4.3</h3>
           <p className="project__card-content">
             Le projet est un petit jeu Snake sur navigateur. Je prévois un système de score,
@@ -40,7 +47,8 @@ const Project = () => (
         </div>
       </div>
       <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-        <div className="project__card project__jeveuxpermuter">
+        <div className="project__card">
+          <img src={jeveuxpermuterImg} alt="jeveuxpermuter.webp" className="project__card-image" />
           <h3 className="project__card-title">jeveuxpermuter.com</h3>
           <p className="project__card-content">
             Le site permet à un agent de la fonction publique de pouvoir trouver un permutant
@@ -65,7 +73,8 @@ const Project = () => (
         </div>
       </div>
       <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-        <div className="project__card project__todolist">
+        <div className="project__card">
+          <img src={todolistImg} alt="todolist.webp" className="project__card-image" />
           <h3 className="project__card-title">TodoList</h3>
           <p className="project__card-content">
             C'est un petit site permettant de gérer ses tâches, quel que soit leur sujet.
@@ -94,7 +103,7 @@ const Project = () => (
         </div>
       </div>
       <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-        <div className="project__card project__oshop">
+        <div className="project__card">
           <h3 className="project__card-title">Oshop (back-end)</h3>
           <p className="project__card-content">
             Back-end de l'application Oshop réalisée en cours. Possibilité de créer un compte,
@@ -113,7 +122,8 @@ const Project = () => (
         </div>
       </div>
       <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-        <div className="project__card project__portfolio">
+        <div className="project__card">
+          <img src={portfolioImg} alt="portfolio.webp" className="project__card-image" />
           <h3 className="project__card-title">Portfolio v1.0</h3>
           <p className="project__card-content">
             Protfolio développé avec React / Redux. Animation faite en SCSS

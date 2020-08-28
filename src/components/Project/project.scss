@@ -62,14 +62,25 @@
   .project__content {
 
     .project__card {
-      background-image: linear-gradient(rgba($green-color, 0.8)), url(../../assets/images/snake.webp);
-      background-size: 150%;
-      background-repeat: no-repeat;
-      background-position: center;
+      position: relative;
+      z-index: 1;
+      background-color: rgba($green-color, 1);
       color: $black-color;
       border-radius: 5px;
       padding: 1rem;
       margin-bottom: 1rem;
+      overflow: hidden;
+
+      .project__card-image {
+        position: absolute;
+        z-index: -1;
+        width: auto;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        opacity: 0.2;
+      }
 
       .project__card-title {
         text-align: center;
@@ -121,24 +132,6 @@
           flex-direction: column;
           align-items: center;
         }
-      }
-
-      &.project__jeveuxpermuter {
-        background-image: linear-gradient(rgba($green-color, 0.8)), url(../../assets/images/jeveuxpermuter.webp);
-        background-size: 100%;
-      }
-
-      &.project__todolist {
-        background-image: linear-gradient(rgba($green-color, 0.8)), url(../../assets/images/todolist.webp);
-        background-size: 110%;
-      }
-
-      &.project__oshop {
-        background-image: linear-gradient(rgba($green-color, 1));
-      }
-
-      &.project__portfolio {
-        background-image: linear-gradient(rgba($green-color, 0.8)), url(../../assets/images/portfolio.webp);
       }
     }
   }
