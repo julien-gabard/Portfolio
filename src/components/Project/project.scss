@@ -74,8 +74,6 @@
       .project__card-image {
         position: absolute;
         z-index: -1;
-        width: auto;
-        height: 100%;
         left: 50%;
         transform: translateX(-50%);
         top: 0;
@@ -99,7 +97,7 @@
 
       .project__card-list__label {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         margin: 2rem 0rem 1rem 0rem;
         
@@ -144,40 +142,5 @@
     width: 50%;
     margin: auto;
     margin-right: 5rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .project {
-
-    .project__content {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-      .project__card {
-        width: 400px;
-        overflow: visible;
-
-        .project__card-image {
-          opacity: 1;
-          width: 300px;
-          height: auto;
-          top: 50%;
-          transform: translateY(-50%);
-          animation: 600ms forwards outCard;
-
-          @keyframes outCard {
-            0% {
-              left: 50%;
-            }
-            
-            100% {
-              left: -80%;
-            }
-          }
-        }
-      }
-    }
   }
 }
